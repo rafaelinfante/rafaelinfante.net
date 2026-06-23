@@ -1,0 +1,259 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education",
+    "contact": "Contact",
+    "downloadCv": "Download CV"
+  },
+  "a11y": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode",
+    "toggleMenu": "Toggle navigation menu",
+    "language": "Language",
+    "switchToEnglish": "Switch to English",
+    "switchToPortuguese": "Mudar para português",
+    "scrollToAbout": "Scroll to the about section",
+    "visit": "Visit {{ name }} (opens in a new tab)"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "lang": {
+    "en": "English",
+    "pt": "Português"
+  },
+  "hero": {
+    "badge": "Open to remote international roles",
+    "title": "Senior Fullstack Java Engineer & Team Lead",
+    "tagline": "Payments · Platform Engineering · Full-Stack Delivery",
+    "valueProp": "I build and modernize secure, scalable production platforms — deep in payments, broad across mobility, cloud, and engineering leadership.",
+    "location": "Remote from Brazil (UTC−3, year-round)",
+    "availability": "~4–6h daily overlap with US Eastern",
+    "getInTouch": "Get in touch"
+  },
+  "highlights": {
+    "heading": "Highlights",
+    "items": [
+      { "value": "37% → 84%", "label": "payment authorization success", "context": "by replacing legacy gateways" },
+      { "value": "15 min → ~1 min", "label": "deployment time", "context": "CI/CD built from scratch" },
+      { "value": "€150M+", "label": "processed — PayBrix platform", "context": "publicly reported" },
+      { "value": "13", "label": "payment gateways integrated" },
+      { "value": "26", "label": "Jenkins CI/CD pipelines" },
+      { "value": "20+ years", "label": "software engineering (10 at Telclic)" }
+    ]
+  },
+  "about": {
+    "label": "About",
+    "heading": "Payments-led, broad by design.",
+    "body": [
+      "I'm a Senior Fullstack Java Engineer and Team Lead with 20+ years of experience — the last decade at Telclic (Dublin; remote from Brazil), building and modernizing production platforms.",
+      "Payments is my deepest specialty: I raised payment authorization success from ~37% to ~84% and integrated 13 gateways behind unified, PCI-aware APIs. But my work spans much more — mobility and smart-city platforms, end-to-end full-stack delivery in Java/Spring and Angular, the team's CI/CD that I built from scratch, legacy-to-modern migrations, and leading distributed teams across countries.",
+      "I work asynchronously across time zones, with several hours of daily overlap with US business hours, and I'm fluent in English (C1/C2). I'm looking for remote roles where depth, range, and ownership matter."
+    ]
+  },
+  "experience": {
+    "label": "Experience",
+    "heading": "Two decades building production software.",
+    "telclic": {
+      "role": "Senior Fullstack Java Developer & Team Lead",
+      "company": "Telclic",
+      "companyUrl": "https://telclic.net",
+      "period": "2016 – Present",
+      "location": "Dublin, Ireland (Remote from Brazil)",
+      "summary": "Core full-stack engineer and Team Lead across payment, insurance, mobility, and smart-city platforms. Joined a 3-person team and helped grow it into a mature, multi-country engineering operation.",
+      "groups": [
+        {
+          "title": "Payments",
+          "bullets": [
+            "Raised payment authorization success from ~37% to ~84% by designing and integrating two new gateways (Stripe, Authipay) to replace legacy ones.",
+            "Build and maintain PayBrix, a collections platform publicly reported at €150M+ processed; the services I maintain settle €44.5M+ across 95,000+ transactions and 180,000+ policyholder records.",
+            "Integrated and unified 13 payment gateways behind common APIs — using each provider's hosted payment page so cardholder data never touches our systems (reduced PCI scope) — with signature-verified webhooks and OAuth2/JWT."
+          ]
+        },
+        {
+          "title": "Platform & DevOps",
+          "bullets": [
+            "Built the team's CI/CD from scratch — 26 Jenkins pipelines across 16 services — cutting deployments from a manual 15-minute-to-1-hour process to ~1 minute.",
+            "Introduced the team's core toolchain: Jira, Bitbucket, Jenkins, Slack, and Flyway.",
+            "Introduced code-quality, security, and observability tooling: SonarQube quality gates in the CI pipeline (catching bugs, vulnerabilities, and code smells), Wazuh for threat prevention and detection, and Uptime Kuma for service uptime monitoring."
+          ]
+        },
+        {
+          "title": "Modernization",
+          "bullets": [
+            "Migrated core platforms Spring Framework 4.3→5.3 and AngularJS→Angular; refactored legacy persistence to Spring Data JPA; upgraded Java 8/11→17.",
+            "Built greenfield services on the latest stack (Spring Boot 3.5, Angular 20)."
+          ]
+        },
+        {
+          "title": "Mobility & smart-city",
+          "bullets": [
+            "Delivered full-stack features across mobility platforms — a multi-tenant parking system serving two national markets, a national bike-share, and a port traffic-management system."
+          ]
+        },
+        {
+          "title": "Leadership",
+          "bullets": [
+            "Team Lead of distributed teams (up to 6 in Ukraine, currently 4 in Brazil); reviewed and merged 470+ team pull requests; mentor and primary technical contact for clients."
+          ]
+        },
+        {
+          "title": "AI-assisted engineering",
+          "bullets": [
+            "Shipped autonomous daily health-check reporting for production payment systems using a headless LLM."
+          ]
+        }
+      ]
+    },
+    "earlierHeading": "Earlier roles",
+    "earlier": [
+      {
+        "company": "SulAmérica Insurances",
+        "url": "https://www.sulamerica.com.br",
+        "role": "Java Developer Analyst",
+        "period": "2014–2015",
+        "description": "Built a new batch billing system generating broker-turnover files for one of Brazil's largest insurers, and developed internal web systems deployed via Jenkins; Java, Spring, Struts, JSF, AngularJS, JPA (Oracle, DB2)."
+      },
+      {
+        "company": "Everis",
+        "url": "https://www.nttdata.com",
+        "role": "System Analyst",
+        "period": "2012–2013",
+        "description": "Gathered requirements and produced technical specs for a new credit-card authorization system; led daily stand-ups, tested deliveries, and produced delivery estimates."
+      },
+      {
+        "company": "Fujitsu",
+        "url": "https://www.fujitsu.com",
+        "role": "Java & Web Developer",
+        "period": "2011–2012",
+        "description": "Built and enhanced corporate web applications (Java, Struts, JSF, EJB, Hibernate)."
+      },
+      {
+        "company": "Trevi Mechanical Industry",
+        "role": "Java Developer & Team Leader",
+        "period": "2009–2011",
+        "description": "Led a team of 3; built the company's control system."
+      },
+      {
+        "company": "Martin-Brower",
+        "url": "https://www.martinbrower.com",
+        "role": "Java & Web Developer",
+        "period": "2006–2009",
+        "description": "Built internationalized (I18N) Java web systems rolled out across multiple countries for a global foodservice distributor; migrated legacy systems to the web via SOAP and produced reporting with Jasper and Crystal Reports."
+      },
+      {
+        "company": "Stefanini IT Solutions",
+        "url": "https://www.stefanini.com",
+        "role": "Java & Web Developer",
+        "period": "2004–2005",
+        "description": "Intranet news portal and sales system."
+      }
+    ]
+  },
+  "projects": {
+    "label": "Selected Projects",
+    "heading": "Platforms in production.",
+    "visit": "Visit",
+    "items": [
+      {
+        "name": "PayBrix",
+        "role": "Full-stack, since inception",
+        "url": "https://paybrix.com",
+        "description": "Insurance collections-automation platform: recurring payments, automated dunning, omnichannel SMS/email/click-to-pay, PAS reconciliation, in a PCI/ISO/GDPR-compliant environment. €150M+ processed; 13 gateways.",
+        "tech": ["Java", "Spring", "Angular", "13 gateways", "PCI/GDPR"]
+      },
+      {
+        "name": "Parking Management Solution",
+        "role": "Full-stack",
+        "description": "Multi-tenant parking-management platform on a modern greenfield stack: Maven multi-module, MySQL/Flyway (689 migrations), MQTT device integration, multi-gateway card payments; serving parking operators, scaled to a second national market with growing transaction volume.",
+        "tech": ["VPM", "Java 17", "Spring Boot 3.5", "Angular 20", "MySQL/Flyway", "MQTT"]
+      },
+      {
+        "name": "TrafficFlow",
+        "role": "Full-stack",
+        "url": "https://telclic.net/trafficflow",
+        "description": "Cloud HGV traffic-management platform for the Port of Dakar: ANPR automated entry/exit, scheduling, and integrated payments; relieved congestion that had forced vessels to reroute.",
+        "tech": ["Cloud", "ANPR", "Scheduling", "Payments"]
+      },
+      {
+        "name": "TFI Bikes",
+        "role": "Full-stack",
+        "url": "https://www.bikeshare.ie",
+        "description": "National public bike-share across four Irish cities, backed by the National Transport Authority: multilingual web and iOS/Android apps.",
+        "tech": ["Web", "iOS", "Android", "Multilingual"]
+      },
+      {
+        "name": "2Bill",
+        "role": "Maintenance",
+        "url": "https://2bill.ie",
+        "description": "Direct-carrier mobile billing: charges to phone bill, sub-10-second transactions, via operators including Vodafone, Three, and O2.",
+        "tech": ["Direct carrier billing", "Java"]
+      }
+    ]
+  },
+  "skills": {
+    "label": "Skills",
+    "heading": "The full stack, end to end.",
+    "groups": [
+      {
+        "title": "Backend",
+        "skills": ["Java (8 / 11 / 17)", "Spring Framework / MVC (5.3)", "Spring Boot (3.x)", "Spring Security", "Spring Data JPA", "Hibernate", "Flyway", "Lombok", "MapStruct"]
+      },
+      {
+        "title": "Frontend",
+        "skills": ["Angular (17–20)", "TypeScript", "RxJS", "AngularJS", "JavaScript", "HTML5", "CSS3"]
+      },
+      {
+        "title": "Payments & Security",
+        "skills": ["13 gateways (Stripe, PayPal, Worldpay, Realex / Global Payments, ACI, Authipay, Payvector, Windcave, Planet, Checkout.com, NMI, Capita Pay360, Credorax)", "Webhook signature verification", "OAuth2 / JWT / OIDC", "PCI-aware coding", "Hosted payment pages"]
+      },
+      {
+        "title": "Cloud & DevOps",
+        "skills": ["Docker", "Jenkins CI/CD", "Maven", "Git / Bitbucket", "AWS (S3 / CloudFront / Route 53)", "Tomcat", "SonarQube", "Wazuh", "Uptime Kuma", "Observability & monitoring"]
+      },
+      {
+        "title": "Data",
+        "skills": ["MySQL", "SQL Server", "Oracle", "DB2", "PL/SQL"]
+      },
+      {
+        "title": "Testing",
+        "skills": ["JUnit 5", "Mockito", "Testcontainers", "AssertJ", "JMeter"]
+      },
+      {
+        "title": "Architecture & Leadership",
+        "skills": ["Microservices & modular monoliths", "System design", "Legacy modernization", "Agile / Scrum", "Team leadership", "Mentoring", "AI-assisted development"]
+      }
+    ]
+  },
+  "education": {
+    "label": "Education, Certifications & Courses",
+    "heading": "Foundations and continuous learning.",
+    "items": [
+      "B.Sc. in Computer Science — São Judas Tadeu University, São Paulo",
+      "General English Course — Griffith College, Dublin",
+      "Oracle Certified Professional, Java Programmer — Oracle",
+      "Process Management with ITIL v3 — Fujitsu",
+      "Web Developer Academy & Java Academy — Globalcode",
+      "Udemy: Spring & Hibernate (incl. Spring Boot); Angular – The Complete Guide; Apache Maven: Beginner to Guru; Responsive Web Design with HTML5 & CSS3; Bootstrap 4"
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Get in touch",
+    "body": "Open to remote international roles. The best way to reach me is by email or LinkedIn.",
+    "emailButton": "Email",
+    "downloadCv": "Download CV"
+  },
+  "footer": {
+    "rights": "© 2026 Rafael Infante",
+    "builtWith": "Built with Angular, hosted on AWS"
+  },
+  "seo": {
+    "title": "Rafael Infante — Senior Fullstack Java Engineer & Team Lead",
+    "description": "Senior Fullstack Java Engineer & Team Lead with 20+ years of experience. Payments-led and broad — mobility, platform/DevOps, full-stack delivery, and engineering leadership. Open to remote international roles."
+  }
+}

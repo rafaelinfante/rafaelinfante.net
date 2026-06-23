@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Primary meta (defaults; localized at runtime per language) -->
+    <title>Rafael Infante — Senior Fullstack Java Engineer & Team Lead</title>
+    <meta
+      name="description"
+      content="Senior Fullstack Java Engineer & Team Lead with 20+ years of experience. Payments-led and broad — mobility, platform/DevOps, full-stack delivery, and engineering leadership. Open to remote international roles."
+    />
+    <meta name="author" content="Rafael Infante" />
+    <link rel="canonical" href="https://rafaelinfante.net/" />
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="https://rafaelinfante.net/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://rafaelinfante.net/" />
+    <link rel="alternate" hreflang="x-default" href="https://rafaelinfante.net/" />
+
+    <meta name="theme-color" content="#4f46e5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1e1b4b" media="(prefers-color-scheme: dark)" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
+    <meta property="profile:first_name" content="Rafael" />
+    <meta property="profile:last_name" content="Infante" />
+    <meta property="og:url" content="https://rafaelinfante.net/" />
+    <meta property="og:site_name" content="Rafael Infante" />
+    <meta property="og:title" content="Rafael Infante — Senior Fullstack Java Engineer & Team Lead" />
+    <meta
+      property="og:description"
+      content="Payments-led, broad by design — 20+ years building and modernizing production platforms. Open to remote international roles."
+    />
+    <meta property="og:image" content="https://rafaelinfante.net/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rafael Infante — Senior Fullstack Java Engineer & Team Lead" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rafael Infante — Senior Fullstack Java Engineer & Team Lead" />
+    <meta
+      name="twitter:description"
+      content="Payments-led, broad by design — 20+ years building and modernizing production platforms. Open to remote international roles."
+    />
+    <meta name="twitter:image" content="https://rafaelinfante.net/og-image.png" />
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!-- Structured data: Person -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rafael Infante",
+        "jobTitle": "Senior Fullstack Java Engineer & Team Lead",
+        "url": "https://rafaelinfante.net",
+        "image": "https://rafaelinfante.net/og-image.png",
+        "email": "matos.rafael@gmail.com",
+        "worksFor": { "@type": "Organization", "name": "Telclic", "url": "https://telclic.net" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidade São Judas Tadeu" },
+        "knowsAbout": ["Java", "Spring", "Payments", "Full-stack development", "CI/CD", "Angular", "Platform engineering", "Team leadership"],
+        "knowsLanguage": ["en", "pt-BR"],
+        "sameAs": [
+          "https://www.linkedin.com/in/rafael-infante-65680394",
+          "https://github.com/rafaelinfante"
+        ]
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Apply the saved theme + language before first paint to avoid a flash. -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t !== 'light') {
+            document.documentElement.classList.add('dark');
+          }
+          var l = localStorage.getItem('lang');
+          if (l === 'en' || l === 'pt-BR') {
+            document.documentElement.lang = l;
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+</html>

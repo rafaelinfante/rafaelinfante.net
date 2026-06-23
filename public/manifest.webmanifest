@@ -1,0 +1,16 @@
+{
+  "name": "Rafael Infante — Senior Fullstack Java Engineer & Team Lead",
+  "short_name": "R. Infante",
+  "description": "Senior Fullstack Java Engineer & Team Lead — payments-led and broad, across mobility, platform/DevOps, and engineering leadership.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

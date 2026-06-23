@@ -1,0 +1,259 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "skills": "Competências",
+    "education": "Formação",
+    "contact": "Contato",
+    "downloadCv": "Baixar CV"
+  },
+  "a11y": {
+    "switchToLight": "Mudar para o modo claro",
+    "switchToDark": "Mudar para o modo escuro",
+    "toggleMenu": "Alternar menu de navegação",
+    "language": "Idioma",
+    "switchToEnglish": "Switch to English",
+    "switchToPortuguese": "Mudar para português",
+    "scrollToAbout": "Rolar para a seção sobre",
+    "visit": "Visitar {{ name }} (abre em nova aba)"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Escuro"
+  },
+  "lang": {
+    "en": "English",
+    "pt": "Português"
+  },
+  "hero": {
+    "badge": "Aberto a vagas remotas internacionais",
+    "title": "Engenheiro Java Full-Stack Sênior & Líder Técnico",
+    "tagline": "Pagamentos · Engenharia de Plataforma · Desenvolvimento Full-Stack",
+    "valueProp": "Construo e modernizo plataformas de produção seguras e escaláveis — com profundidade em pagamentos e amplitude em mobilidade, nuvem e liderança de engenharia.",
+    "location": "Remoto do Brasil (UTC−3, o ano todo)",
+    "availability": "~4–6h de sobreposição diária com o horário comercial dos EUA (Costa Leste)",
+    "getInTouch": "Entre em contato"
+  },
+  "highlights": {
+    "heading": "Destaques",
+    "items": [
+      { "value": "37% → 84%", "label": "sucesso de autorização de pagamentos", "context": "substituindo gateways legados" },
+      { "value": "15 min → ~1 min", "label": "tempo de deploy", "context": "CI/CD construído do zero" },
+      { "value": "€150M+", "label": "processados — plataforma PayBrix", "context": "dado público" },
+      { "value": "13", "label": "gateways de pagamento integrados" },
+      { "value": "26", "label": "pipelines Jenkins de CI/CD" },
+      { "value": "20+ anos", "label": "engenharia de software (10 na Telclic)" }
+    ]
+  },
+  "about": {
+    "label": "Sobre",
+    "heading": "Liderado por pagamentos, amplo por design.",
+    "body": [
+      "Sou Engenheiro Java Full-Stack Sênior e Líder Técnico com mais de 20 anos de experiência — a última década na Telclic (Dublin; remoto do Brasil), construindo e modernizando plataformas de produção.",
+      "Pagamentos é minha especialidade mais profunda: elevei a taxa de sucesso de autorização de ~37% para ~84% e integrei 13 gateways atrás de APIs unificadas e em conformidade com PCI. Mas meu trabalho vai muito além — plataformas de mobilidade e smart-city, desenvolvimento full-stack de ponta a ponta em Java/Spring e Angular, o CI/CD da equipe que construí do zero, migrações de legado para moderno e liderança de times distribuídos entre países.",
+      "Trabalho de forma assíncrona entre fusos, com várias horas de sobreposição diária com o horário comercial dos EUA, e sou fluente em inglês (C1/C2). Busco vagas remotas onde profundidade, amplitude e ownership importem."
+    ]
+  },
+  "experience": {
+    "label": "Experiência",
+    "heading": "Duas décadas construindo software de produção.",
+    "telclic": {
+      "role": "Desenvolvedor Java Full-Stack Sênior & Líder Técnico",
+      "company": "Telclic",
+      "companyUrl": "https://telclic.net",
+      "period": "2016 – Presente",
+      "location": "Dublin, Irlanda (Remoto do Brasil)",
+      "summary": "Engenheiro full-stack e Líder Técnico em plataformas de pagamentos, seguros, mobilidade e smart-city. Entrei numa equipe de 3 pessoas e ajudei a transformá-la numa operação de engenharia madura e multinacional.",
+      "groups": [
+        {
+          "title": "Pagamentos",
+          "bullets": [
+            "Elevei a taxa de sucesso de autorização de ~37% para ~84% projetando e integrando dois novos gateways (Stripe, Authipay) para substituir os legados.",
+            "Construo e mantenho o PayBrix, plataforma de cobrança com €150M+ processados (dado público); os serviços que mantenho liquidam €44,5M+ em 95.000+ transações e 180.000+ registros de segurados.",
+            "Integrei e unifiquei 13 gateways de pagamento atrás de APIs comuns — usando a página de pagamento hospedada de cada provedor para que os dados do cartão nunca passem pelos nossos sistemas (escopo de PCI reduzido) — com webhooks com assinatura verificada e OAuth2/JWT."
+          ]
+        },
+        {
+          "title": "Plataforma & DevOps",
+          "bullets": [
+            "Construí o CI/CD da equipe do zero — 26 pipelines Jenkins em 16 serviços — reduzindo os deploys de um processo manual de 15 minutos a 1 hora para ~1 minuto.",
+            "Introduzi as ferramentas centrais da equipe: Jira, Bitbucket, Jenkins, Slack e Flyway.",
+            "Introduzi ferramentas de qualidade de código, segurança e observabilidade: quality gates do SonarQube no pipeline de CI (detecção de bugs, vulnerabilidades e code smells), Wazuh para prevenção e detecção de ameaças, e Uptime Kuma para monitoramento de disponibilidade dos serviços."
+          ]
+        },
+        {
+          "title": "Modernização",
+          "bullets": [
+            "Migrei plataformas core de Spring Framework 4.3→5.3 e AngularJS→Angular; refatorei persistência legada para Spring Data JPA; atualizei Java 8/11→17.",
+            "Construí serviços greenfield na stack mais recente (Spring Boot 3.5, Angular 20)."
+          ]
+        },
+        {
+          "title": "Mobilidade & smart-city",
+          "bullets": [
+            "Entreguei funcionalidades full-stack em plataformas de mobilidade — um sistema de estacionamento multi-tenant atendendo dois mercados nacionais, um bike-share nacional e um sistema de gestão de tráfego portuário."
+          ]
+        },
+        {
+          "title": "Liderança",
+          "bullets": [
+            "Líder Técnico de times distribuídos (até 6 na Ucrânia, atualmente 4 no Brasil); revisei e integrei 470+ pull requests da equipe; mentor e contato técnico principal com clientes."
+          ]
+        },
+        {
+          "title": "Engenharia assistida por IA",
+          "bullets": [
+            "Coloquei em produção relatórios autônomos de saúde para sistemas de pagamento usando um LLM headless."
+          ]
+        }
+      ]
+    },
+    "earlierHeading": "Experiências anteriores",
+    "earlier": [
+      {
+        "company": "SulAmérica Seguros",
+        "url": "https://www.sulamerica.com.br",
+        "role": "Analista Desenvolvedor Java",
+        "period": "2014–2015",
+        "description": "Construí um novo sistema de billing em lote que gerava arquivos de comissão de corretores para uma das maiores seguradoras do Brasil e desenvolvi sistemas web internos com deploy via Jenkins; Java, Spring, Struts, JSF, AngularJS, JPA (Oracle, DB2)."
+      },
+      {
+        "company": "Everis",
+        "url": "https://www.nttdata.com",
+        "role": "Analista de Sistemas",
+        "period": "2012–2013",
+        "description": "Levantei requisitos e produzi especificações técnicas para um novo sistema de autorização de cartão de crédito; conduzi as dailies, testei entregas e elaborei estimativas."
+      },
+      {
+        "company": "Fujitsu",
+        "url": "https://www.fujitsu.com",
+        "role": "Desenvolvedor Java & Web",
+        "period": "2011–2012",
+        "description": "Construí e evoluí aplicações web corporativas (Java, Struts, JSF, EJB, Hibernate)."
+      },
+      {
+        "company": "Trevi Mechanical Industry",
+        "role": "Desenvolvedor Java & Líder de Equipe",
+        "period": "2009–2011",
+        "description": "Liderei uma equipe de 3; construí o sistema de controle da empresa."
+      },
+      {
+        "company": "Martin-Brower",
+        "url": "https://www.martinbrower.com",
+        "role": "Desenvolvedor Java & Web",
+        "period": "2006–2009",
+        "description": "Construí sistemas web Java internacionalizados (I18N) implantados em vários países para um distribuidor global de foodservice; migrei sistemas legados para a web via SOAP e gerei relatórios com Jasper e Crystal Reports."
+      },
+      {
+        "company": "Stefanini IT Solutions",
+        "url": "https://www.stefanini.com",
+        "role": "Desenvolvedor Java & Web",
+        "period": "2004–2005",
+        "description": "Portal de notícias da intranet e sistema de vendas."
+      }
+    ]
+  },
+  "projects": {
+    "label": "Projetos Selecionados",
+    "heading": "Plataformas em produção.",
+    "visit": "Visitar",
+    "items": [
+      {
+        "name": "PayBrix",
+        "role": "Full-stack, desde a concepção",
+        "url": "https://paybrix.com",
+        "description": "Plataforma de automação de cobrança para seguros: pagamentos recorrentes, régua de cobrança automatizada, atendimento omnichannel SMS/e-mail/click-to-pay, reconciliação com PAS, em ambiente compatível com PCI/ISO/GDPR. €150M+ processados; 13 gateways.",
+        "tech": ["Java", "Spring", "Angular", "13 gateways", "PCI/GDPR"]
+      },
+      {
+        "name": "Solução de Gestão de Estacionamento",
+        "role": "Full-stack",
+        "description": "Plataforma de gestão de estacionamentos multi-tenant em stack greenfield moderna: Maven multi-módulo, MySQL/Flyway (689 migrations), integração MQTT, pagamentos com múltiplos gateways; atendendo operadores de estacionamento, expandido para um segundo mercado nacional com volume de transações crescente.",
+        "tech": ["VPM", "Java 17", "Spring Boot 3.5", "Angular 20", "MySQL/Flyway", "MQTT"]
+      },
+      {
+        "name": "TrafficFlow",
+        "role": "Full-stack",
+        "url": "https://telclic.net/trafficflow",
+        "description": "Plataforma cloud de gestão de tráfego de caminhões para o Porto de Dakar: entrada/saída automatizada por leitura de placas (ANPR), agendamento e pagamentos integrados; aliviou o congestionamento que fazia navios serem desviados.",
+        "tech": ["Cloud", "ANPR", "Scheduling", "Payments"]
+      },
+      {
+        "name": "TFI Bikes",
+        "role": "Full-stack",
+        "url": "https://www.bikeshare.ie",
+        "description": "Bike-share público nacional em quatro cidades irlandesas, mantido pela National Transport Authority: site multilíngue e apps iOS/Android.",
+        "tech": ["Web", "iOS", "Android", "Multilingual"]
+      },
+      {
+        "name": "2Bill",
+        "role": "Manutenção",
+        "url": "https://2bill.ie",
+        "description": "Cobrança direta na conta do celular: transações em menos de 10 segundos, via operadoras como Vodafone, Three e O2.",
+        "tech": ["Direct carrier billing", "Java"]
+      }
+    ]
+  },
+  "skills": {
+    "label": "Competências",
+    "heading": "A stack completa, de ponta a ponta.",
+    "groups": [
+      {
+        "title": "Backend",
+        "skills": ["Java (8 / 11 / 17)", "Spring Framework / MVC (5.3)", "Spring Boot (3.x)", "Spring Security", "Spring Data JPA", "Hibernate", "Flyway", "Lombok", "MapStruct"]
+      },
+      {
+        "title": "Frontend",
+        "skills": ["Angular (17–20)", "TypeScript", "RxJS", "AngularJS", "JavaScript", "HTML5", "CSS3"]
+      },
+      {
+        "title": "Pagamentos & Segurança",
+        "skills": ["13 gateways (Stripe, PayPal, Worldpay, Realex / Global Payments, ACI, Authipay, Payvector, Windcave, Planet, Checkout.com, NMI, Capita Pay360, Credorax)", "Webhook signature verification", "OAuth2 / JWT / OIDC", "PCI-aware coding", "Hosted payment pages"]
+      },
+      {
+        "title": "Cloud & DevOps",
+        "skills": ["Docker", "Jenkins CI/CD", "Maven", "Git / Bitbucket", "AWS (S3 / CloudFront / Route 53)", "Tomcat", "SonarQube", "Wazuh", "Uptime Kuma", "Observabilidade & monitoramento"]
+      },
+      {
+        "title": "Dados",
+        "skills": ["MySQL", "SQL Server", "Oracle", "DB2", "PL/SQL"]
+      },
+      {
+        "title": "Testes",
+        "skills": ["JUnit 5", "Mockito", "Testcontainers", "AssertJ", "JMeter"]
+      },
+      {
+        "title": "Arquitetura & Liderança",
+        "skills": ["Microservices & modular monoliths", "System design", "Legacy modernization", "Agile / Scrum", "Team leadership", "Mentoring", "AI-assisted development"]
+      }
+    ]
+  },
+  "education": {
+    "label": "Formação, Certificações & Cursos",
+    "heading": "Base e aprendizado contínuo.",
+    "items": [
+      "Bacharelado em Ciência da Computação — Universidade São Judas Tadeu, São Paulo",
+      "Curso de Inglês — Griffith College, Dublin",
+      "Oracle Certified Professional, Java Programmer — Oracle",
+      "Gestão de Processos com ITIL v3 — Fujitsu",
+      "Web Developer Academy & Java Academy — Globalcode",
+      "Udemy: Spring & Hibernate (incl. Spring Boot); Angular – The Complete Guide; Apache Maven: Beginner to Guru; Web Responsivo com HTML5 & CSS3; Bootstrap 4"
+    ]
+  },
+  "contact": {
+    "label": "Contato",
+    "heading": "Contato",
+    "body": "Aberto a vagas remotas internacionais. A melhor forma de falar comigo é por e-mail ou LinkedIn.",
+    "emailButton": "E-mail",
+    "downloadCv": "Baixar CV"
+  },
+  "footer": {
+    "rights": "© 2026 Rafael Infante",
+    "builtWith": "Feito com Angular, hospedado na AWS"
+  },
+  "seo": {
+    "title": "Rafael Infante — Engenheiro Java Full-Stack Sênior & Líder Técnico",
+    "description": "Engenheiro Java Full-Stack Sênior & Líder Técnico com mais de 20 anos de experiência. Liderado por pagamentos e amplo — mobilidade, plataforma/DevOps, desenvolvimento full-stack e liderança de engenharia. Aberto a vagas remotas internacionais."
+  }
+}
