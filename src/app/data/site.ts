@@ -11,8 +11,7 @@ export const SITE = {
   name: 'Rafael Infante',
   email: 'matos.rafael@gmail.com',
   github: 'https://github.com/rafaelinfante',
-  linkedin: 'https://www.linkedin.com/in/rafael-infante-65680394',
-  // Placeholder CV — drop the final PDF at public/Rafael_Infante_CV.pdf (no code change).
+  linkedin: 'https://www.linkedin.com/in/infanterafael',
   cvUrl: '/Rafael_Infante_CV.pdf',
   url: 'https://rafaelinfante.net',
 } as const;
