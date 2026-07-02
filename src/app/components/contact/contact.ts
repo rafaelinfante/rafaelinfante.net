@@ -4,7 +4,7 @@ import { TranslocoDirective } from '@jsverse/transloco';
 import { Icon } from '../../shared/icon/icon';
 import { RevealDirective } from '../../shared/reveal.directive';
 import { SocialLinks } from '../../shared/social-links/social-links';
-import { SITE } from '../../data/site';
+import { OPEN_TO_WORK, SITE } from '../../data/site';
 
 @Component({
   selector: 'app-contact',
@@ -23,7 +23,12 @@ import { SITE } from '../../data/site';
 
           <p class="section-label">{{ t('contact.label') }}</p>
           <h2 class="heading-2 mx-auto mt-3 max-w-xl">{{ t('contact.heading') }}</h2>
-          <p class="mx-auto mt-4 max-w-xl text-lg text-ink-600 dark:text-ink-300">{{ t('contact.body') }}</p>
+          <p class="mx-auto mt-4 max-w-xl text-lg text-ink-600 dark:text-ink-300">
+            @if (openToWork) {
+              {{ t('contact.availability') }}
+            }
+            {{ t('contact.body') }}
+          </p>
 
           <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
             <a
@@ -55,4 +60,5 @@ import { SITE } from '../../data/site';
 export class Contact {
   protected readonly email = SITE.email;
   protected readonly cvUrl = SITE.cvUrl;
+  protected readonly openToWork = OPEN_TO_WORK;
 }

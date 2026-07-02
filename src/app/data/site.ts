@@ -16,6 +16,8 @@ export const SITE = {
   url: 'https://rafaelinfante.net',
 } as const;
 
+export const OPEN_TO_WORK = false;
+
 export type Lang = 'en' | 'pt-BR';
 export const LANGS: readonly Lang[] = ['en', 'pt-BR'] as const;
 export const DEFAULT_LANG: Lang = 'en';

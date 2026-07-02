@@ -15,7 +15,7 @@ const TRANSLATION: Translation = {
     contact: 'Contact',
     downloadCv: 'Download CV',
   },
-  seo: { title: 'Rafael Infante', description: 'Senior Fullstack Java Engineer & Team Lead' },
+  seo: { title: 'Rafael Infante', description: 'Senior Full-Stack Java Engineer & Team Lead' },
 };
 
 function translocoTesting() {

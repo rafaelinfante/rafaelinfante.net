@@ -3,7 +3,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { Icon } from '../../shared/icon/icon';
 import { SocialLinks } from '../../shared/social-links/social-links';
-import { SITE } from '../../data/site';
+import { OPEN_TO_WORK, SITE } from '../../data/site';
 
 @Component({
   selector: 'app-hero',
@@ -20,15 +20,17 @@ import { SITE } from '../../data/site';
 
       <div class="container-content pb-20 sm:pb-28">
         <div class="max-w-3xl">
-          <p
-            class="mb-6 inline-flex items-center gap-2 rounded-full border border-ink-200 bg-white/60 px-3 py-1 text-sm text-ink-600 dark:border-ink-800 dark:bg-ink-900/60 dark:text-ink-300"
-          >
-            <span class="relative flex h-2 w-2">
-              <span class="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-accent-500"></span>
-              <span class="relative inline-flex h-2 w-2 rounded-full bg-accent-500"></span>
-            </span>
-            {{ t('hero.badge') }}
-          </p>
+          @if (openToWork) {
+            <p
+              class="mb-6 inline-flex items-center gap-2 rounded-full border border-ink-200 bg-white/60 px-3 py-1 text-sm text-ink-600 dark:border-ink-800 dark:bg-ink-900/60 dark:text-ink-300"
+            >
+              <span class="relative flex h-2 w-2">
+                <span class="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-accent-500"></span>
+                <span class="relative inline-flex h-2 w-2 rounded-full bg-accent-500"></span>
+              </span>
+              {{ t('hero.badge') }}
+            </p>
+          }
 
           <h1 class="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-ink-900 dark:text-white sm:text-6xl">
             {{ name }}
@@ -94,4 +96,5 @@ export class Hero {
   protected readonly name = SITE.name;
   protected readonly email = SITE.email;
   protected readonly cvUrl = SITE.cvUrl;
+  protected readonly openToWork = OPEN_TO_WORK;
 }

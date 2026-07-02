@@ -1,10 +1,12 @@
 import { inject, Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { TranslocoService } from '@jsverse/transloco';
+import { OPEN_TO_WORK } from '../data/site';
 
 interface Seo {
   title: string;
   description: string;
+  availabilityNote?: string;
 }
 
 /**
@@ -20,7 +22,11 @@ export class SeoService {
   init(): void {
     this.transloco.selectTranslateObject<Seo>('seo').subscribe((seo) => {
       if (!seo?.title) return;
-      const { title, description } = seo;
+      const { title } = seo;
+      const description =
+        OPEN_TO_WORK && seo.availabilityNote
+          ? `${seo.description} ${seo.availabilityNote}`
+          : seo.description;
       this.title.setTitle(title);
       this.meta.updateTag({ name: 'description', content: description });
       this.meta.updateTag({ property: 'og:title', content: title });

@@ -28,7 +28,7 @@
   },
   "hero": {
     "badge": "Open to remote international roles",
-    "title": "Senior Fullstack Java Engineer & Team Lead",
+    "title": "Senior Full-Stack Java Engineer & Team Lead",
     "tagline": "Payments · Platform Engineering · Full-Stack Delivery",
     "valueProp": "I build and modernize secure, scalable production platforms — deep in payments, broad across mobility, cloud, and engineering leadership.",
     "location": "Remote from Brazil (UTC−3, year-round)",
@@ -50,7 +50,7 @@
     "label": "About",
     "heading": "Payments-led, broad by design.",
     "body": [
-      "I'm a Senior Fullstack Java Engineer and Team Lead with 20+ years of experience — the last decade at Telclic (Dublin; remote from Brazil), building and modernizing production platforms.",
+      "I'm a Senior Full-Stack Java Engineer and Team Lead with 20+ years of experience — the last decade at Telclic (Dublin; remote from Brazil), building and modernizing production platforms.",
       "Payments is my deepest specialty: I raised payment authorization success from ~37% to ~84% and integrated 13 gateways behind unified, PCI-aware APIs. But my work spans much more — mobility and smart-city platforms, end-to-end full-stack delivery in Java/Spring and Angular, the team's CI/CD that I built from scratch, legacy-to-modern migrations, and leading distributed teams across countries.",
       "I work asynchronously across time zones, with several hours of daily overlap with US business hours, and I'm fluent in English (C1/C2). I'm looking for remote roles where depth, range, and ownership matter."
     ]
@@ -59,7 +59,7 @@
     "label": "Experience",
     "heading": "Two decades building production software.",
     "telclic": {
-      "role": "Senior Fullstack Java Developer & Team Lead",
+      "role": "Senior Full-Stack Java Developer & Team Lead",
       "company": "Telclic",
       "companyUrl": "https://telclic.net",
       "period": "2016 – Present",
@@ -169,7 +169,7 @@
       {
         "name": "Parking Management Solution",
         "role": "Full-stack",
-        "description": "Multi-tenant parking-management platform on a modern greenfield stack: Maven multi-module, MySQL/Flyway (689 migrations), MQTT device integration, multi-gateway card payments; serving parking operators, scaled to a second national market with growing transaction volume.",
+        "description": "Multi-tenant parking-management platform on a modern greenfield stack: Maven multi-module, MySQL/Flyway (689 migrations), MQTT device integration, multi-gateway card payments; serving parking operators; scaled to a second national market, growing payment volume ~188% and transactions ~228% in its first year.",
         "tech": ["VPM", "Java 17", "Spring Boot 3.5", "Angular 20", "MySQL/Flyway", "MQTT"]
       },
       {
@@ -244,7 +244,8 @@
   "contact": {
     "label": "Contact",
     "heading": "Get in touch",
-    "body": "Open to remote international roles. The best way to reach me is by email or LinkedIn.",
+    "availability": "Open to remote international roles.",
+    "body": "The best way to reach me is by email or LinkedIn.",
     "emailButton": "Email",
     "downloadCv": "Download CV"
   },
@@ -253,7 +254,8 @@
     "builtWith": "Built with Angular, hosted on AWS"
   },
   "seo": {
-    "title": "Rafael Infante — Senior Fullstack Java Engineer & Team Lead",
-    "description": "Senior Fullstack Java Engineer & Team Lead with 20+ years of experience. Payments-led and broad — mobility, platform/DevOps, full-stack delivery, and engineering leadership. Open to remote international roles."
+    "title": "Rafael Infante — Senior Full-Stack Java Engineer & Team Lead",
+    "description": "Senior Full-Stack Java Engineer & Team Lead with 20+ years of experience. Payments-led and broad — mobility, platform/DevOps, full-stack delivery, and engineering leadership.",
+    "availabilityNote": "Open to remote international roles."
   }
 }

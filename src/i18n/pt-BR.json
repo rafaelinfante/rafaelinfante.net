@@ -169,7 +169,7 @@
       {
         "name": "Solução de Gestão de Estacionamento",
         "role": "Full-stack",
-        "description": "Plataforma de gestão de estacionamentos multi-tenant em stack greenfield moderna: Maven multi-módulo, MySQL/Flyway (689 migrations), integração MQTT, pagamentos com múltiplos gateways; atendendo operadores de estacionamento, expandido para um segundo mercado nacional com volume de transações crescente.",
+        "description": "Plataforma de gestão de estacionamentos multi-tenant em stack greenfield moderna: Maven multi-módulo, MySQL/Flyway (689 migrations), integração MQTT, pagamentos com múltiplos gateways; atendendo operadores de estacionamento; expandido para um segundo mercado nacional, com o volume de pagamentos crescendo ~188% e as transações ~228% no primeiro ano.",
         "tech": ["VPM", "Java 17", "Spring Boot 3.5", "Angular 20", "MySQL/Flyway", "MQTT"]
       },
       {
@@ -244,7 +244,8 @@
   "contact": {
     "label": "Contato",
     "heading": "Contato",
-    "body": "Aberto a vagas remotas internacionais. A melhor forma de falar comigo é por e-mail ou LinkedIn.",
+    "availability": "Aberto a vagas remotas internacionais.",
+    "body": "A melhor forma de falar comigo é por e-mail ou LinkedIn.",
     "emailButton": "E-mail",
     "downloadCv": "Baixar CV"
   },
@@ -254,6 +255,7 @@
   },
   "seo": {
     "title": "Rafael Infante — Engenheiro Java Full-Stack Sênior & Líder Técnico",
-    "description": "Engenheiro Java Full-Stack Sênior & Líder Técnico com mais de 20 anos de experiência. Liderado por pagamentos e amplo — mobilidade, plataforma/DevOps, desenvolvimento full-stack e liderança de engenharia. Aberto a vagas remotas internacionais."
+    "description": "Engenheiro Java Full-Stack Sênior & Líder Técnico com mais de 20 anos de experiência. Liderado por pagamentos e amplo — mobilidade, plataforma/DevOps, desenvolvimento full-stack e liderança de engenharia.",
+    "availabilityNote": "Aberto a vagas remotas internacionais."
   }
 }
