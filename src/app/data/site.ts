@@ -14,6 +14,7 @@ export const SITE = {
   linkedin: 'https://www.linkedin.com/in/infanterafael',
   cvUrl: '/Rafael_Infante_CV.pdf',
   url: 'https://rafaelinfante.net',
+  calendly: 'https://calendly.com/rafaelinfante',
 } as const;
 
 export const OPEN_TO_WORK = false;

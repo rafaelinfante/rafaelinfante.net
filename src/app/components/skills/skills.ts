@@ -3,7 +3,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { TranslocoDirective, TranslocoService } from '@jsverse/transloco';
 import { Icon } from '../../shared/icon/icon';
 import { RevealDirective } from '../../shared/reveal.directive';
-import { SKILL_ICONS } from '../../data/site';
+import { SITE, SKILL_ICONS } from '../../data/site';
 
 interface SkillGroup {
   title: string;
@@ -45,6 +45,19 @@ interface SkillGroup {
             </div>
           }
         </div>
+        <p
+          appReveal
+          class="mt-6 rounded-2xl border border-dashed border-ink-300 px-5 py-4 text-sm leading-relaxed text-ink-500 dark:border-ink-700 dark:text-ink-400"
+        >
+          {{ t('skills.learning.text') }}
+          <a
+            [href]="github"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-medium text-accent-600 underline-offset-4 hover:underline dark:text-accent-400"
+            >{{ t('skills.learning.link') }}</a
+          >
+        </p>
       </div>
     </section>
   `,
@@ -52,6 +65,7 @@ interface SkillGroup {
 export class Skills {
   private readonly transloco = inject(TranslocoService);
   private readonly icons = SKILL_ICONS;
+  protected readonly github = SITE.github;
   protected readonly groups = toSignal(this.transloco.selectTranslateObject<SkillGroup[]>('skills.groups'), {
     initialValue: [] as SkillGroup[],
   });

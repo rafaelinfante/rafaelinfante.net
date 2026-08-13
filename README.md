@@ -1,6 +1,6 @@
 # rafaelinfante.net — Personal CV & Portfolio
 
-Personal CV / portfolio site for Rafael Infante — Senior Full-Stack Java Engineer & Team Lead. A fast, accessible, bilingual (English / Brazilian Portuguese) single-page Angular app, prerendered to static HTML and deployed on AWS (S3 + CloudFront + Route 53).
+Personal CV / portfolio site for Rafael Infante — Senior Full-Stack Java Engineer — Payments & Fintech. A fast, accessible, bilingual (English / Brazilian Portuguese) single-page Angular app, prerendered to static HTML and deployed on AWS (S3 + CloudFront + Route 53).
 
 🔗 Live: https://rafaelinfante.net
 

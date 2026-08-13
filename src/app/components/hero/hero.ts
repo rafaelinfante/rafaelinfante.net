@@ -60,10 +60,21 @@ import { OPEN_TO_WORK, SITE } from '../../data/site';
 
           <div class="mt-9 flex flex-wrap items-center gap-3">
             <a
+              [href]="calendlyUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              matRipple
+              class="inline-flex items-center gap-2 rounded-xl bg-accent-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-accent-700 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600"
+            >
+              <app-icon name="calendar" [size]="18" />
+              {{ t('hero.bookCall') }}
+            </a>
+
+            <a
               [href]="cvUrl"
               download
               matRipple
-              class="inline-flex items-center gap-2 rounded-xl bg-accent-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-accent-700 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600"
+              class="inline-flex items-center gap-2 rounded-xl border border-ink-300 px-5 py-3 text-sm font-semibold text-ink-700 transition-colors hover:border-accent-500 hover:text-accent-600 dark:border-ink-700 dark:text-ink-200 dark:hover:border-accent-400 dark:hover:text-accent-400"
             >
               <app-icon name="download" [size]="18" />
               {{ t('nav.downloadCv') }}
@@ -96,5 +107,6 @@ export class Hero {
   protected readonly name = SITE.name;
   protected readonly email = SITE.email;
   protected readonly cvUrl = SITE.cvUrl;
+  protected readonly calendlyUrl = SITE.calendly;
   protected readonly openToWork = OPEN_TO_WORK;
 }

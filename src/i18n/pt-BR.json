@@ -28,56 +28,57 @@
   },
   "hero": {
     "badge": "Aberto a vagas remotas internacionais",
-    "title": "Engenheiro Java Full-Stack Sênior & Líder Técnico",
+    "title": "Engenheiro Java Full-Stack Sênior — Pagamentos & Fintech",
     "tagline": "Pagamentos · Engenharia de Plataforma · Desenvolvimento Full-Stack",
-    "valueProp": "Construo e modernizo plataformas de produção seguras e escaláveis — com profundidade em pagamentos e amplitude em mobilidade, nuvem e liderança de engenharia.",
+    "valueProp": "Construo e modernizo plataformas de produção seguras e escaláveis — com profundidade em pagamentos e fintech e amplitude em mobilidade, nuvem e desenvolvimento full-stack.",
     "location": "Remoto do Brasil (UTC−3, o ano todo)",
-    "availability": "~4–6h de sobreposição diária com o horário comercial dos EUA (Costa Leste)",
-    "getInTouch": "Entre em contato"
+    "availability": "sobreposição quase integral com a Costa Leste dos EUA, 4–5h com Reino Unido/Europa",
+    "getInTouch": "Entre em contato",
+    "bookCall": "Agende uma conversa de 20 min"
   },
   "highlights": {
     "heading": "Destaques",
     "items": [
-      { "value": "37% → 84%", "label": "sucesso de autorização de pagamentos", "context": "substituindo gateways legados" },
+      { "value": "~38% → 85%", "label": "taxa de autorização de cartão", "context": "duas novas integrações de gateway (Stripe, Fiserv/Authipay)" },
       { "value": "15 min → ~1 min", "label": "tempo de deploy", "context": "CI/CD construído do zero" },
-      { "value": "€150M+", "label": "processados — plataforma PayBrix", "context": "dado público" },
+      { "value": "€150M+", "label": "arrecadados — plataforma PayBrix", "context": "dado público" },
+      { "value": "0", "label": "cobranças duplicadas confirmadas", "context": "em 313.000+ transações de cartão" },
       { "value": "13", "label": "gateways de pagamento integrados" },
-      { "value": "26", "label": "pipelines Jenkins de CI/CD" },
-      { "value": "20+ anos", "label": "engenharia de software (10 na Telclic)" }
+      { "value": "26", "label": "pipelines Jenkins de CI/CD" }
     ]
   },
   "about": {
     "label": "Sobre",
     "heading": "Liderado por pagamentos, amplo por design.",
     "body": [
-      "Sou Engenheiro Java Full-Stack Sênior e Líder Técnico com mais de 20 anos de experiência — a última década na Telclic (Dublin; remoto do Brasil), construindo e modernizando plataformas de produção.",
-      "Pagamentos é minha especialidade mais profunda: elevei a taxa de sucesso de autorização de ~37% para ~84% e integrei 13 gateways atrás de APIs unificadas e em conformidade com PCI. Mas meu trabalho vai muito além — plataformas de mobilidade e smart-city, desenvolvimento full-stack de ponta a ponta em Java/Spring e Angular, o CI/CD da equipe que construí do zero, migrações de legado para moderno e liderança de times distribuídos entre países.",
-      "Trabalho de forma assíncrona entre fusos, com várias horas de sobreposição diária com o horário comercial dos EUA, e sou fluente em inglês (C1/C2). Busco vagas remotas onde profundidade, amplitude e ownership importem."
+      "Sou Engenheiro Java Full-Stack Sênior especializado em pagamentos e fintech, com mais de 20 anos de experiência — a última década na Telclic (Dublin; remoto do Brasil), construindo e modernizando plataformas de produção.",
+      "Pagamentos é minha especialidade mais profunda: elevei a autorização de cartão de ~38% para ~85% e integrei 13 gateways atrás de APIs unificadas e em conformidade com PCI. Mas meu trabalho vai muito além — plataformas de mobilidade e smart-city, desenvolvimento full-stack de ponta a ponta em Java/Spring e Angular, o CI/CD da equipe que construí do zero e migrações de legado para moderno.",
+      "Trabalho de forma assíncrona entre fusos, com sobreposição quase integral com o horário comercial da Costa Leste dos EUA. Inglês fluente (C2). Busco vagas remotas onde profundidade, amplitude e ownership importem."
     ]
   },
   "experience": {
     "label": "Experiência",
     "heading": "Duas décadas construindo software de produção.",
     "telclic": {
-      "role": "Desenvolvedor Java Full-Stack Sênior & Líder Técnico",
+      "role": "Engenheiro Java Full-Stack Sênior",
       "company": "Telclic",
       "companyUrl": "https://telclic.net",
       "period": "2016 – Presente",
       "location": "Dublin, Irlanda (Remoto do Brasil)",
-      "summary": "Engenheiro full-stack e Líder Técnico em plataformas de pagamentos, seguros, mobilidade e smart-city. Entrei numa equipe de 3 pessoas e ajudei a transformá-la numa operação de engenharia madura e multinacional.",
+      "summary": "Engenheiro full-stack em plataformas de pagamentos, seguros, mobilidade e smart-city. Entrei numa equipe de 3 pessoas e ajudei a transformá-la numa operação de engenharia madura e multinacional.",
       "groups": [
         {
           "title": "Pagamentos",
           "bullets": [
-            "Elevei a taxa de sucesso de autorização de ~37% para ~84% projetando e integrando dois novos gateways (Stripe, Authipay) para substituir os legados.",
-            "Construo e mantenho o PayBrix, plataforma de cobrança com €150M+ processados (dado público); os serviços que mantenho liquidam €44,5M+ em 95.000+ transações e 180.000+ registros de segurados.",
+            "Elevei a autorização de ~38% para ~85% projetando e construindo duas novas integrações de gateway (Stripe ~95%, Fiserv/Authipay ~90%) e migrando o tráfego dos lojistas para elas.",
+            "Construo e mantenho o PayBrix, plataforma de cobrança para seguros que reporta publicamente €150M+ arrecadados. 180.000+ registros de segurados e 1M+ de lembretes automatizados (536 mil SMS + 475 mil e-mails). Zero cobranças duplicadas confirmadas em 313.000+ transações de cartão; 99,997% de entrega de webhooks aos lojistas em 238.000+ callbacks.",
             "Integrei e unifiquei 13 gateways de pagamento atrás de APIs comuns — usando a página de pagamento hospedada de cada provedor para que os dados do cartão nunca passem pelos nossos sistemas (escopo de PCI reduzido) — com webhooks com assinatura verificada e OAuth2/JWT."
           ]
         },
         {
           "title": "Plataforma & DevOps",
           "bullets": [
-            "Construí o CI/CD da equipe do zero — 26 pipelines Jenkins em 16 serviços — reduzindo os deploys de um processo manual de 15 minutos a 1 hora para ~1 minuto.",
+            "Construí o CI/CD da equipe do zero — 26 pipelines Jenkins em 19 serviços/apps implantados; releases manuais de 15 min a 1 hora → deploys de ~1 minuto (mediana de 45s, 96,7% de sucesso nos builds de produção).",
             "Introduzi as ferramentas centrais da equipe: Jira, Bitbucket, Jenkins, Slack e Flyway.",
             "Introduzi ferramentas de qualidade de código, segurança e observabilidade: quality gates do SonarQube no pipeline de CI (detecção de bugs, vulnerabilidades e code smells), Wazuh para prevenção e detecção de ameaças, e Uptime Kuma para monitoramento de disponibilidade dos serviços."
           ]
@@ -85,7 +86,8 @@
         {
           "title": "Modernização",
           "bullets": [
-            "Migrei plataformas core de Spring Framework 4.3→5.3 e AngularJS→Angular; refatorei persistência legada para Spring Data JPA; atualizei Java 8/11→17.",
+            "Atualização de plataforma Java 11→17 e Spring 4.3→5.8 feita sozinho em ~1 semana (~20 bibliotecas), seguida da migração de HibernateTemplate → Spring Data JPA.",
+            "Migrei os front ends das plataformas core de AngularJS 1.6.5 → Angular 17 (#2 contribuidor).",
             "Construí serviços greenfield na stack mais recente (Spring Boot 3.5, Angular 20)."
           ]
         },
@@ -98,7 +100,7 @@
         {
           "title": "Liderança",
           "bullets": [
-            "Líder Técnico de times distribuídos (até 6 na Ucrânia, atualmente 4 no Brasil); revisei e integrei 470+ pull requests da equipe; mentor e contato técnico principal com clientes."
+            "Liderei um time distribuído de 4–6 pessoas como tech lead — 2.300+ pull requests revisados (900+ aprovados), 500+ PRs próprios integrados — mantendo-me hands-on. Mentor e contato técnico principal com clientes."
           ]
         },
         {
@@ -163,7 +165,7 @@
         "name": "PayBrix",
         "role": "Full-stack, desde a concepção",
         "url": "https://paybrix.com",
-        "description": "Plataforma de automação de cobrança para seguros: pagamentos recorrentes, régua de cobrança automatizada, atendimento omnichannel SMS/e-mail/click-to-pay, reconciliação com PAS, em ambiente compatível com PCI/ISO/GDPR. €150M+ processados; 13 gateways.",
+        "description": "Plataforma de automação de cobrança para seguros: pagamentos recorrentes, régua de cobrança automatizada, atendimento omnichannel SMS/e-mail/click-to-pay, reconciliação com PAS, em ambiente compatível com PCI/ISO/GDPR. €150M+ arrecadados; 13 gateways.",
         "tech": ["Java", "Spring", "Angular", "13 gateways", "PCI/GDPR"]
       },
       {
@@ -213,7 +215,7 @@
       },
       {
         "title": "Cloud & DevOps",
-        "skills": ["Docker", "Jenkins CI/CD", "Maven", "Git / Bitbucket", "AWS (S3 / CloudFront / Route 53)", "Tomcat", "SonarQube", "Wazuh", "Uptime Kuma", "Observabilidade & monitoramento"]
+        "skills": ["Docker", "Jenkins CI/CD", "Maven", "Git / Bitbucket", "Tomcat", "SonarQube", "Wazuh", "Uptime Kuma", "Observabilidade & monitoramento"]
       },
       {
         "title": "Dados",
@@ -227,13 +229,17 @@
         "title": "Arquitetura & Liderança",
         "skills": ["Microservices & modular monoliths", "System design", "Legacy modernization", "Agile / Scrum", "Team leadership", "Mentoring", "AI-assisted development"]
       }
-    ]
+    ],
+    "learning": {
+      "text": "Portfólio / aprendendo atualmente: Kafka, RabbitMQ, Kubernetes, Spring AI — projetos públicos em",
+      "link": "github.com/rafaelinfante"
+    }
   },
   "education": {
     "label": "Formação, Certificações & Cursos",
     "heading": "Base e aprendizado contínuo.",
     "items": [
-      "Bacharelado em Ciência da Computação — Universidade São Judas Tadeu, São Paulo",
+      "Bacharelado em Ciência da Computação — Universidade Paulista, São Paulo, Brasil",
       "Curso de Inglês — Griffith College, Dublin",
       "Oracle Certified Professional, Java Programmer — Oracle",
       "Gestão de Processos com ITIL v3 — Fujitsu",
@@ -247,15 +253,24 @@
     "availability": "Aberto a vagas remotas internacionais.",
     "body": "A melhor forma de falar comigo é por e-mail ou LinkedIn.",
     "emailButton": "E-mail",
-    "downloadCv": "Baixar CV"
+    "downloadCv": "Baixar CV",
+    "bookCall": "Agende uma conversa de 20 min",
+    "remote": {
+      "title": "Trabalhando comigo remotamente",
+      "items": [
+        "Remoto (UTC−3) · sobreposição quase integral com a Costa Leste dos EUA, 4–5h com Reino Unido/Europa",
+        "Contrato, tempo integral ou fracionado (20–30h/semana)",
+        "Pronto para contratação PJ/CNPJ — faturamento via Deel, Remote.com, Wise ou Payoneer"
+      ]
+    }
   },
   "footer": {
     "rights": "© 2026 Rafael Infante",
     "builtWith": "Feito com Angular, hospedado na AWS"
   },
   "seo": {
-    "title": "Rafael Infante — Engenheiro Java Full-Stack Sênior & Líder Técnico",
-    "description": "Engenheiro Java Full-Stack Sênior & Líder Técnico com mais de 20 anos de experiência. Liderado por pagamentos e amplo — mobilidade, plataforma/DevOps, desenvolvimento full-stack e liderança de engenharia.",
+    "title": "Rafael Infante — Engenheiro Java Full-Stack Sênior — Pagamentos & Fintech",
+    "description": "Engenheiro Java full-stack sênior especializado em pagamentos — elevei a autorização de cartão de ~38% para 85% e construí plataformas por trás de €150M+ arrecadados. Java, Spring Boot, Angular. Remoto (UTC−3).",
     "availabilityNote": "Aberto a vagas remotas internacionais."
   }
 }

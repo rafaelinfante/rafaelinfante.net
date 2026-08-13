@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { MatRippleModule } from '@angular/material/core';
-import { TranslocoDirective } from '@jsverse/transloco';
+import { TranslocoDirective, TranslocoService } from '@jsverse/transloco';
 import { Icon } from '../../shared/icon/icon';
 import { RevealDirective } from '../../shared/reveal.directive';
 import { SocialLinks } from '../../shared/social-links/social-links';
@@ -31,10 +32,22 @@ import { OPEN_TO_WORK, SITE } from '../../data/site';
           </p>
 
           <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
+            <!-- TODO: swap SITE.calendly for the real Calendly link once available. -->
+            <a
+              [href]="calendlyUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              matRipple
+              class="inline-flex items-center gap-2 rounded-xl bg-accent-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-accent-700 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600"
+            >
+              <app-icon name="calendar" [size]="18" />
+              {{ t('contact.bookCall') }}
+            </a>
+
             <a
               [href]="'mailto:' + email"
               matRipple
-              class="inline-flex items-center gap-2 rounded-xl bg-accent-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-accent-700 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600"
+              class="inline-flex items-center gap-2 rounded-xl border border-ink-300 px-6 py-3 text-sm font-semibold text-ink-700 transition-colors hover:border-accent-500 hover:text-accent-600 dark:border-ink-700 dark:text-ink-200 dark:hover:border-accent-400 dark:hover:text-accent-400"
             >
               <app-icon name="mail" [size]="18" />
               {{ email }}
@@ -52,13 +65,31 @@ import { OPEN_TO_WORK, SITE } from '../../data/site';
           </div>
 
           <app-social-links variant="bordered" class="mt-8 justify-center" />
+
+          <!-- How a remote engagement works: time zones, engagement shapes, invoicing. -->
+          <div class="mx-auto mt-10 max-w-2xl rounded-2xl border border-ink-200 bg-ink-100/60 p-6 text-left dark:border-ink-800 dark:bg-ink-950/40">
+            <h3 class="font-display text-base font-bold text-ink-900 dark:text-white">{{ t('contact.remote.title') }}</h3>
+            <ul class="mt-3 space-y-2">
+              @for (item of remoteItems(); track $index) {
+                <li class="flex gap-3 text-sm leading-relaxed text-ink-600 dark:text-ink-300">
+                  <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-500"></span>
+                  <span>{{ item }}</span>
+                </li>
+              }
+            </ul>
+          </div>
         </div>
       </div>
     </section>
   `,
 })
 export class Contact {
+  private readonly transloco = inject(TranslocoService);
   protected readonly email = SITE.email;
   protected readonly cvUrl = SITE.cvUrl;
+  protected readonly calendlyUrl = SITE.calendly;
   protected readonly openToWork = OPEN_TO_WORK;
+  protected readonly remoteItems = toSignal(this.transloco.selectTranslateObject<string[]>('contact.remote.items'), {
+    initialValue: [] as string[],
+  });
 }
