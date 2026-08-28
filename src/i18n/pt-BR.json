@@ -87,7 +87,7 @@
           "title": "Modernização",
           "bullets": [
             "Atualização de plataforma Java 11→17 e Spring 4.3→5.8 feita sozinho em ~1 semana (~20 bibliotecas), seguida da migração de HibernateTemplate → Spring Data JPA.",
-            "Migrei os front ends das plataformas core de AngularJS 1.6.5 → Angular 17 (#2 contribuidor).",
+            "Contribuidor principal (#2) no replatform da UI AngularJS 1.6.5 para Angular 17.",
             "Construí serviços greenfield na stack mais recente (Spring Boot 3.5, Angular 20)."
           ]
         },
@@ -267,7 +267,7 @@
     "groups": [
       {
         "title": "Backend",
-        "skills": ["Java (8 / 11 / 17)", "Spring Framework / MVC (5.3)", "Spring Boot (3.x)", "Spring Security", "Spring Data JPA", "Hibernate", "Flyway", "Lombok", "MapStruct"]
+        "skills": ["Java (8 / 11 / 17)", "Spring Framework / MVC (5.3–5.8)", "Spring Boot (3.x)", "Spring Security", "Spring Data JPA", "Hibernate", "Flyway", "Lombok", "MapStruct"]
       },
       {
         "title": "Frontend",
@@ -306,7 +306,6 @@
       "Bacharelado em Ciência da Computação — Universidade Paulista, São Paulo, Brasil",
       "Curso de Inglês — Griffith College, Dublin",
       "Oracle Certified Professional, Java Programmer — Oracle",
-      "Gestão de Processos com ITIL v3 — Fujitsu",
       "Web Developer Academy & Java Academy — Globalcode",
       "Udemy: Spring & Hibernate (incl. Spring Boot); Angular – The Complete Guide; Apache Maven: Beginner to Guru; Web Responsivo com HTML5 & CSS3; Bootstrap 4"
     ]
