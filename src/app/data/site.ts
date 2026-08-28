@@ -45,3 +45,14 @@ export const SKILL_ICONS: IconName[] = ['server', 'code', 'shield', 'cloud', 'da
 
 /** Icons for the Telclic accomplishment groups, matching `experience.telclic.groups`. */
 export const EXPERIENCE_ICONS: IconName[] = ['credit-card', 'git-branch', 'refresh-cw', 'map-pin', 'users', 'sparkles'];
+
+/**
+ * Icons for the labelled blocks of the case-study projects (the ones whose i18n
+ * entry carries a `blocks` array), keyed by the project's position in
+ * `projects.items` and then matching the order of its blocks. Reordering
+ * `projects.items` in the i18n files means reordering these too.
+ */
+export const CASE_STUDY_ICONS: Record<number, IconName[]> = {
+  0: ['git-branch', 'credit-card', 'refresh-cw'], // PayBrix
+  1: ['git-branch', 'globe', 'shield', 'sparkles', 'server'], // Visitor Parking Management
+};

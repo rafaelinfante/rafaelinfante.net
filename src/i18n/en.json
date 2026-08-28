@@ -30,7 +30,7 @@
     "badge": "Open to remote international roles",
     "title": "Senior Full-Stack Java Engineer — Payments & Fintech",
     "tagline": "Payments · Platform Engineering · Full-Stack Delivery",
-    "valueProp": "I build and modernize secure, scalable production platforms — deep in payments and fintech, broad across mobility, cloud, and full-stack delivery.",
+    "valueProp": "I build and modernize secure, scalable production platforms — deep in payments and fintech, broad across mobility, DevOps, and full-stack delivery.",
     "location": "Remote from Brazil (UTC−3, year-round)",
     "availability": "near-full US Eastern overlap, 4–5h UK/EU",
     "getInTouch": "Get in touch",
@@ -53,7 +53,7 @@
     "body": [
       "I'm a Senior Full-Stack Java Engineer specialized in payments and fintech, with 20+ years of experience — the last decade at Telclic (Dublin; remote from Brazil), building and modernizing production platforms.",
       "Payments is my deepest specialty: I raised card authorization from ~38% to ~85% and integrated 13 gateways behind unified, PCI-aware APIs. But my work spans much more — mobility and smart-city platforms, end-to-end full-stack delivery in Java/Spring and Angular, the team's CI/CD that I built from scratch, and legacy-to-modern migrations.",
-      "I work asynchronously across time zones, with near-full daily overlap with US Eastern business hours. Fluent English (C2). I'm looking for remote roles where depth, range, and ownership matter."
+      "I work asynchronously across time zones, with near-full daily overlap with US Eastern business hours. Fluent English (C1). I'm looking for remote roles where depth, range, and ownership matter."
     ]
   },
   "experience": {
@@ -160,19 +160,72 @@
     "label": "Selected Projects",
     "heading": "Platforms in production.",
     "visit": "Visit",
+    "moreDetails": "More details",
     "items": [
       {
         "name": "PayBrix",
         "role": "Full-stack, since inception",
         "url": "https://paybrix.com",
-        "description": "Insurance collections-automation platform: recurring payments, automated dunning, omnichannel SMS/email/click-to-pay, PAS reconciliation, in a PCI/ISO/GDPR-compliant environment. €150M+ collected; 13 gateways.",
-        "tech": ["Java", "Spring", "Angular", "13 gateways", "PCI/GDPR"]
+        "description": "Insurance-collections platform publicly reporting €150M+ collected — recurring payments, automated dunning, omnichannel outreach.",
+        "metrics": {
+          "caption": "In production since 2016",
+          "items": [
+            { "value": "~38% → ~85%", "label": "authorization rate" },
+            { "value": "0 / 313k+", "label": "confirmed double-charges / transactions" },
+            { "value": "99.997%", "label": "merchant webhook delivery" }
+          ]
+        },
+        "blocks": [
+          {
+            "label": "Integration layer",
+            "text": "13 payment gateways behind one internal API; gateway-hosted payment pages keep card data out of our systems (reduced PCI scope)."
+          },
+          {
+            "label": "Authorization turnaround",
+            "text": "~38% → ~85% — built the Stripe (~95%) and Fiserv/Authipay (~90%) integrations solo, migrated merchant traffic, moved the hosted page from iframe to full-page redirect (fewer 3-D Secure challenges)."
+          },
+          {
+            "label": "Scale & automation",
+            "text": "1M+ automated reminders (SMS + email) · 180,000+ policyholder records · automated reconciliation against provider settlement reports."
+          }
+        ],
+        "tech": ["Java 17", "Spring 5.8", "Angular 17", "MySQL", "Jenkins"]
       },
       {
-        "name": "Parking Management Solution",
+        "name": "Visitor Parking Management — Greenfield Multi-Tenant SaaS",
         "role": "Full-stack",
-        "description": "Multi-tenant parking-management platform on a modern greenfield stack: Maven multi-module, MySQL/Flyway (689 migrations), MQTT device integration, multi-gateway card payments; serving parking operators; scaled to a second national market, growing payment volume ~188% and transactions ~228% in its first year.",
-        "tech": ["VPM", "Java 17", "Spring Boot 3.5", "Angular 20", "MySQL/Flyway", "MQTT"]
+        "description": "White-label, self-service parking payments: a driver scans a QR code, pays by card, and their plate lands on the site's ANPR enforcement whitelist — no app, no ticket machine.",
+        "metrics": {
+          "caption": "First year of live payments",
+          "items": [
+            { "value": "+188%", "label": "payment volume" },
+            { "value": "+228%", "label": "transactions" },
+            { "value": "~7×", "label": "site footprint" }
+          ]
+        },
+        "blocks": [
+          {
+            "label": "Built from a blank repository",
+            "text": "Java 17, Spring Boot 3.5, Angular 20 (separate driver-facing and back-office apps), Spring Data JDBC, Flyway, Maven multi-module."
+          },
+          {
+            "label": "Multi-tenant by construction",
+            "text": "One codebase deployed per market with its own branding, currency, payment gateway and database — live in Ireland and the US."
+          },
+          {
+            "label": "Card data never touches the platform",
+            "text": "Payments are delegated to our PCI-scoped payment platform via gateway-hosted pages."
+          },
+          {
+            "label": "Product depth",
+            "text": "Tiered tariffs · rotating discount QR codes · email/SMS expiry reminders · PDF receipts · tax & convenience-fee engine · scheduled GDPR obfuscation of personal data · whitelist push to the external enforcement provider."
+          },
+          {
+            "label": "Device backbone ahead of hardware",
+            "text": "MQTT telemetry layer (Spring Integration over TLS, QoS 2, durable sessions) built and receiving ahead of the barrier/camera rollout, with an API-vs-MQTT abstraction per device."
+          }
+        ],
+        "tech": ["Java 17", "Spring Boot 3.5", "Angular 20", "Spring Data JDBC", "Flyway", "MQTT", "Multi-tenant SaaS"]
       },
       {
         "name": "TrafficFlow",
@@ -197,6 +250,17 @@
       }
     ]
   },
+  "platform": {
+    "heading": "Platform & delivery — how everything above ships",
+    "lead": "I built the engineering platform these products run on, from zero.",
+    "stats": [
+      { "value": "26", "label": "pipelines" },
+      { "value": "19", "label": "services" },
+      { "value": "~1 min", "label": "deploys (45s median)" },
+      { "value": "96.7%", "label": "prod build success" }
+    ],
+    "footnote": "Jenkins CI/CD built from scratch · SonarQube quality gates · Wazuh security monitoring · Uptime Kuma availability · introduced the team's entire toolchain (Jira, Bitbucket, Flyway)"
+  },
   "skills": {
     "label": "Skills",
     "heading": "The full stack, end to end.",
@@ -211,7 +275,7 @@
       },
       {
         "title": "Payments & Security",
-        "skills": ["13 gateways (Stripe, PayPal, Worldpay, Realex / Global Payments, ACI, Authipay, Payvector, Windcave, Planet, Checkout.com, NMI, Capita Pay360, Credorax)", "Webhook signature verification", "OAuth2 / JWT / OIDC", "PCI-aware coding", "Hosted payment pages"]
+        "skills": ["13 gateways (Stripe, PayPal, Worldpay, Realex / Global Payments, ACI, Authipay, Payvector, Windcave, Planet, Checkout.com, NMI, Capita Pay360, Credorax)", "Webhook signature verification", "OAuth2 / JWT / OIDC", "PCI-aware coding", "Hosted payment pages", "Idempotency & duplicate-payment prevention", "3-D Secure"]
       },
       {
         "title": "Cloud & DevOps",

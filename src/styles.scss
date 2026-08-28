@@ -79,6 +79,15 @@ html.dark {
     @apply font-display text-3xl font-bold tracking-tight text-ink-900 dark:text-white sm:text-4xl;
   }
 
+  /* Chevron for the "More details" disclosure on the featured project cards.
+     The checkbox is visually hidden; the label next to it is the control. */
+  .details-chevron {
+    @apply inline-flex transition-transform duration-200;
+  }
+  .disclosure-toggle:checked ~ label .details-chevron {
+    @apply rotate-180;
+  }
+
   /* Reveal-on-scroll: hidden until the .is-visible class is added by the directive. */
   .reveal {
     @apply opacity-0;

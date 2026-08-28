@@ -30,7 +30,7 @@
     "badge": "Aberto a vagas remotas internacionais",
     "title": "Engenheiro Java Full-Stack Sênior — Pagamentos & Fintech",
     "tagline": "Pagamentos · Engenharia de Plataforma · Desenvolvimento Full-Stack",
-    "valueProp": "Construo e modernizo plataformas de produção seguras e escaláveis — com profundidade em pagamentos e fintech e amplitude em mobilidade, nuvem e desenvolvimento full-stack.",
+    "valueProp": "Construo e modernizo plataformas de produção seguras e escaláveis — com profundidade em pagamentos e fintech e amplitude em mobilidade, DevOps e desenvolvimento full-stack.",
     "location": "Remoto do Brasil (UTC−3, o ano todo)",
     "availability": "sobreposição quase integral com a Costa Leste dos EUA, 4–5h com Reino Unido/Europa",
     "getInTouch": "Entre em contato",
@@ -53,7 +53,7 @@
     "body": [
       "Sou Engenheiro Java Full-Stack Sênior especializado em pagamentos e fintech, com mais de 20 anos de experiência — a última década na Telclic (Dublin; remoto do Brasil), construindo e modernizando plataformas de produção.",
       "Pagamentos é minha especialidade mais profunda: elevei a autorização de cartão de ~38% para ~85% e integrei 13 gateways atrás de APIs unificadas e em conformidade com PCI. Mas meu trabalho vai muito além — plataformas de mobilidade e smart-city, desenvolvimento full-stack de ponta a ponta em Java/Spring e Angular, o CI/CD da equipe que construí do zero e migrações de legado para moderno.",
-      "Trabalho de forma assíncrona entre fusos, com sobreposição quase integral com o horário comercial da Costa Leste dos EUA. Inglês fluente (C2). Busco vagas remotas onde profundidade, amplitude e ownership importem."
+      "Trabalho de forma assíncrona entre fusos, com sobreposição quase integral com o horário comercial da Costa Leste dos EUA. Inglês fluente (C1). Busco vagas remotas onde profundidade, amplitude e ownership importem."
     ]
   },
   "experience": {
@@ -160,19 +160,72 @@
     "label": "Projetos Selecionados",
     "heading": "Plataformas em produção.",
     "visit": "Visitar",
+    "moreDetails": "Mais detalhes",
     "items": [
       {
         "name": "PayBrix",
         "role": "Full-stack, desde a concepção",
         "url": "https://paybrix.com",
-        "description": "Plataforma de automação de cobrança para seguros: pagamentos recorrentes, régua de cobrança automatizada, atendimento omnichannel SMS/e-mail/click-to-pay, reconciliação com PAS, em ambiente compatível com PCI/ISO/GDPR. €150M+ arrecadados; 13 gateways.",
-        "tech": ["Java", "Spring", "Angular", "13 gateways", "PCI/GDPR"]
+        "description": "Plataforma de cobrança para seguros que reporta publicamente €150M+ arrecadados — pagamentos recorrentes, régua de cobrança automatizada, atendimento omnichannel.",
+        "metrics": {
+          "caption": "Em produção desde 2016",
+          "items": [
+            { "value": "~38% → ~85%", "label": "taxa de autorização" },
+            { "value": "0 / 313 mil+", "label": "cobranças duplicadas confirmadas / transações" },
+            { "value": "99,997%", "label": "entrega de webhooks aos lojistas" }
+          ]
+        },
+        "blocks": [
+          {
+            "label": "Camada de integração",
+            "text": "13 gateways de pagamento atrás de uma única API interna; as páginas de pagamento hospedadas pelo gateway mantêm os dados do cartão fora dos nossos sistemas (escopo de PCI reduzido)."
+          },
+          {
+            "label": "Virada na autorização",
+            "text": "~38% → ~85% — construí sozinho as integrações Stripe (~95%) e Fiserv/Authipay (~90%), migrei o tráfego dos lojistas e troquei a página hospedada de iframe para redirecionamento em página cheia (menos desafios de 3-D Secure)."
+          },
+          {
+            "label": "Escala & automação",
+            "text": "1M+ de lembretes automatizados (SMS + e-mail) · 180.000+ registros de segurados · reconciliação automatizada com os relatórios de liquidação dos provedores."
+          }
+        ],
+        "tech": ["Java 17", "Spring 5.8", "Angular 17", "MySQL", "Jenkins"]
       },
       {
-        "name": "Solução de Gestão de Estacionamento",
+        "name": "Visitor Parking Management — SaaS Multi-Tenant Greenfield",
         "role": "Full-stack",
-        "description": "Plataforma de gestão de estacionamentos multi-tenant em stack greenfield moderna: Maven multi-módulo, MySQL/Flyway (689 migrations), integração MQTT, pagamentos com múltiplos gateways; atendendo operadores de estacionamento; expandido para um segundo mercado nacional, com o volume de pagamentos crescendo ~188% e as transações ~228% no primeiro ano.",
-        "tech": ["VPM", "Java 17", "Spring Boot 3.5", "Angular 20", "MySQL/Flyway", "MQTT"]
+        "description": "Pagamentos de estacionamento self-service e white-label: o motorista escaneia um QR code, paga com cartão e sua placa entra na whitelist de fiscalização por ANPR do local — sem app, sem parquímetro.",
+        "metrics": {
+          "caption": "Primeiro ano de pagamentos em produção",
+          "items": [
+            { "value": "+188%", "label": "volume de pagamentos" },
+            { "value": "+228%", "label": "transações" },
+            { "value": "~7×", "label": "presença em locais" }
+          ]
+        },
+        "blocks": [
+          {
+            "label": "Construído a partir de um repositório em branco",
+            "text": "Java 17, Spring Boot 3.5, Angular 20 (apps separados para o motorista e para o back-office), Spring Data JDBC, Flyway, Maven multi-módulo."
+          },
+          {
+            "label": "Multi-tenant por construção",
+            "text": "Uma base de código implantada por mercado, cada uma com sua própria marca, moeda, gateway de pagamento e banco de dados — em produção na Irlanda e nos EUA."
+          },
+          {
+            "label": "Dados de cartão nunca passam pela plataforma",
+            "text": "Os pagamentos são delegados à nossa plataforma de pagamentos com escopo PCI, por meio de páginas hospedadas pelo gateway."
+          },
+          {
+            "label": "Profundidade de produto",
+            "text": "Tarifas escalonadas · QR codes de desconto rotativos · lembretes de expiração por e-mail/SMS · recibos em PDF · motor de impostos e taxa de conveniência · ofuscação agendada de dados pessoais (GDPR) · envio da whitelist ao fornecedor externo de fiscalização."
+          },
+          {
+            "label": "Base de dispositivos antes do hardware",
+            "text": "Camada de telemetria MQTT (Spring Integration sobre TLS, QoS 2, sessões duráveis) construída e já recebendo dados antes da implantação de cancelas e câmeras, com abstração API-vs-MQTT por dispositivo."
+          }
+        ],
+        "tech": ["Java 17", "Spring Boot 3.5", "Angular 20", "Spring Data JDBC", "Flyway", "MQTT", "Multi-tenant SaaS"]
       },
       {
         "name": "TrafficFlow",
@@ -197,6 +250,17 @@
       }
     ]
   },
+  "platform": {
+    "heading": "Plataforma & entrega — como tudo acima chega à produção",
+    "lead": "Construí do zero a plataforma de engenharia em que esses produtos rodam.",
+    "stats": [
+      { "value": "26", "label": "pipelines" },
+      { "value": "19", "label": "serviços" },
+      { "value": "~1 min", "label": "deploys (mediana de 45s)" },
+      { "value": "96,7%", "label": "sucesso nos builds de produção" }
+    ],
+    "footnote": "CI/CD Jenkins construído do zero · quality gates do SonarQube · monitoramento de segurança com Wazuh · disponibilidade com Uptime Kuma · introduzi todo o toolchain da equipe (Jira, Bitbucket, Flyway)"
+  },
   "skills": {
     "label": "Competências",
     "heading": "A stack completa, de ponta a ponta.",
@@ -211,7 +275,7 @@
       },
       {
         "title": "Pagamentos & Segurança",
-        "skills": ["13 gateways (Stripe, PayPal, Worldpay, Realex / Global Payments, ACI, Authipay, Payvector, Windcave, Planet, Checkout.com, NMI, Capita Pay360, Credorax)", "Webhook signature verification", "OAuth2 / JWT / OIDC", "PCI-aware coding", "Hosted payment pages"]
+        "skills": ["13 gateways (Stripe, PayPal, Worldpay, Realex / Global Payments, ACI, Authipay, Payvector, Windcave, Planet, Checkout.com, NMI, Capita Pay360, Credorax)", "Webhook signature verification", "OAuth2 / JWT / OIDC", "PCI-aware coding", "Hosted payment pages", "Idempotency & duplicate-payment prevention", "3-D Secure"]
       },
       {
         "title": "Cloud & DevOps",
