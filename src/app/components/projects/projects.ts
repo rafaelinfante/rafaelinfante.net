@@ -69,7 +69,7 @@ interface Project {
               </div>
 
               <!-- The case-study lead gets a fixed three-line box from the sm breakpoint up, so the
-                   two featured cards keep the same collapsed height in either language. -->
+                   featured cards keep the same collapsed height in either language. -->
               <p
                 class="mt-3 flex-1 leading-relaxed text-ink-600 dark:text-ink-300"
                 [class]="isCaseStudy(project) ? 'max-w-3xl sm:min-h-[5.25rem] sm:text-lg' : ''"
@@ -116,8 +116,8 @@ interface Project {
                 </div>
               }
 
-              <!-- Featured cards show their detail outright from md up. On phones the two
-                   case studies would run ~1.6 and ~2 screens each, so there they collapse
+              <!-- Featured cards show their detail outright from md up. On phones each
+                   case study would run roughly two screens, so there they collapse
                    behind a "More details" toggle. The state is pure CSS — a hidden
                    checkbox below md, always-open from md up — so no breakpoint can leave
                    the detail hidden with no way back, and every word stays in the DOM. -->

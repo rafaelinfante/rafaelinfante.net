@@ -55,4 +55,5 @@ export const EXPERIENCE_ICONS: IconName[] = ['credit-card', 'git-branch', 'refre
 export const CASE_STUDY_ICONS: Record<number, IconName[]> = {
   0: ['git-branch', 'credit-card', 'refresh-cw'], // PayBrix
   1: ['git-branch', 'globe', 'shield', 'sparkles', 'server'], // Visitor Parking Management
+  2: ['git-branch', 'map-pin', 'credit-card', 'calendar'], // TrafficFlow
 };

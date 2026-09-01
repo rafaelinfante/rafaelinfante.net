@@ -52,7 +52,7 @@
     "heading": "Liderado por pagamentos, amplo por design.",
     "body": [
       "Sou Engenheiro Java Full-Stack Sênior especializado em pagamentos e fintech, com mais de 20 anos de experiência — a última década na Telclic (Dublin; remoto do Brasil), construindo e modernizando plataformas de produção.",
-      "Pagamentos é minha especialidade mais profunda: elevei a autorização de cartão de ~38% para ~85% e integrei 13 gateways atrás de APIs unificadas e em conformidade com PCI. Mas meu trabalho vai muito além — plataformas de mobilidade e smart-city, desenvolvimento full-stack de ponta a ponta em Java/Spring e Angular, o CI/CD da equipe que construí do zero e migrações de legado para moderno.",
+      "Pagamentos é minha especialidade mais profunda: elevei a autorização de cartão de ~38% para ~85% e integrei 13 gateways atrás de APIs unificadas e em conformidade com PCI. Mas meu trabalho vai muito além — plataformas de mobilidade, smart-city e infraestrutura portuária, desenvolvimento full-stack de ponta a ponta em Java/Spring e Angular, o CI/CD da equipe que construí do zero e migrações de legado para moderno.",
       "Trabalho de forma assíncrona entre fusos, com sobreposição quase integral com o horário comercial da Costa Leste dos EUA. Inglês fluente (C1). Busco vagas remotas onde profundidade, amplitude e ownership importem."
     ]
   },
@@ -94,7 +94,7 @@
         {
           "title": "Mobilidade & smart-city",
           "bullets": [
-            "Entreguei funcionalidades full-stack em plataformas de mobilidade — um sistema de estacionamento multi-tenant atendendo dois mercados nacionais, um bike-share nacional e um sistema de gestão de tráfego portuário."
+            "Maior contribuidor (38% dos commits, equipe de 15 pessoas) da plataforma de agendamento de caminhões e acesso aos portões do Porto de Dakar — 6 anos em produção, 3,7M de movimentos de caminhões, 24/7 — responsável pela API de gate pass, pela integração ANPR em 13 faixas de portão e pela stack de pagamentos/faturamento. Também entreguei funcionalidades full-stack para uma plataforma de estacionamento multi-tenant e para o bike-share nacional da Irlanda."
           ]
         },
         {
@@ -228,11 +228,37 @@
         "tech": ["Java 17", "Spring Boot 3.5", "Angular 20", "Spring Data JDBC", "Flyway", "MQTT", "Multi-tenant SaaS"]
       },
       {
-        "name": "TrafficFlow",
-        "role": "Full-stack",
+        "name": "TrafficFlow — Acesso Portuário & Agendamento de Caminhões · Porto de Dakar",
+        "role": "Maior contribuidor · 2021–2025",
         "url": "https://telclic.net/trafficflow",
-        "description": "Plataforma cloud de gestão de tráfego de caminhões para o Porto de Dakar: entrada/saída automatizada por leitura de placas (ANPR), agendamento e pagamentos integrados; aliviou o congestionamento que fazia navios serem desviados.",
-        "tech": ["Cloud", "ANPR", "Scheduling", "Payments"]
+        "description": "O sistema que controlou o acesso de caminhões ao Porto de Dakar por seis anos — cada caminhão de contêiner agendado, autorizado, rastreado e faturado por ele.",
+        "metrics": {
+          "caption": "Seis anos em produção · 24/7",
+          "items": [
+            { "value": "3,7M", "label": "movimentos de caminhões" },
+            { "value": "4,3M", "label": "autorizações automáticas de cancela por ANPR" },
+            { "value": "5,8%", "label": "participação da hora de pico no volume diário (2,6:1 pico-vale)" }
+          ]
+        },
+        "blocks": [
+          {
+            "label": "Ownership",
+            "text": "Maior contribuidor de uma equipe de 15 pessoas (38% dos commits). Construí a API REST de gate pass para os operadores de terminal, o ciclo de vida das viagens, a geração de recibos/PDF e os pipelines multilíngues de SMS/e-mail (EN/FR/Wolof/Bambara, 2M+ de mensagens)."
+          },
+          {
+            "label": "Acesso físico",
+            "text": "Integração ANPR controlando 13 faixas físicas de portão em três zonas do porto; estacionamento de espera, liberação de slots e autorização automática de cancela."
+          },
+          {
+            "label": "Pagamentos & contas",
+            "text": "Contas pré-pagas de transportadoras com controle de saldo negativo (overdraft) e prazos de pagamento, integração de mobile money via agregador (Orange Money, Free Money, Wari, E-Money — callbacks com verificação de hash, 60 mil+ transações), faturas, recibos e extratos automatizados em 3,4M de viagens com taxa cobrada."
+          },
+          {
+            "label": "Modelagem do tráfego",
+            "text": "O agendamento por slots, com cotas horárias por terminal, distribuiu as chegadas ao longo de um perfil 24/7 real — a hora de pico responde por apenas 5,8% do volume. Escalou por um crescimento de +15,7% nos movimentos de caminhões, com trilha de auditoria de 20,7M de eventos."
+          }
+        ],
+        "tech": ["Java 11", "Spring 5.3", "Spring Batch", "MySQL 8", "ANPR", "Mobile money"]
       },
       {
         "name": "TFI Bikes",
@@ -267,7 +293,7 @@
     "groups": [
       {
         "title": "Backend",
-        "skills": ["Java (8 / 11 / 17)", "Spring Framework / MVC (5.3–5.8)", "Spring Boot (3.x)", "Spring Security", "Spring Data JPA", "Hibernate", "Flyway", "Lombok", "MapStruct"]
+        "skills": ["Java (8 / 11 / 17)", "Spring Framework / MVC (5.3–5.8)", "Spring Boot (3.x)", "Spring Security", "Spring Data JPA", "Spring Batch", "Hibernate", "Flyway", "Lombok", "MapStruct"]
       },
       {
         "title": "Frontend",
@@ -275,7 +301,7 @@
       },
       {
         "title": "Pagamentos & Segurança",
-        "skills": ["13 gateways (Stripe, PayPal, Worldpay, Realex / Global Payments, ACI, Authipay, Payvector, Windcave, Planet, Checkout.com, NMI, Capita Pay360, Credorax)", "Webhook signature verification", "OAuth2 / JWT / OIDC", "PCI-aware coding", "Hosted payment pages", "Idempotency & duplicate-payment prevention", "3-D Secure"]
+        "skills": ["13 gateways (Stripe, PayPal, Worldpay, Realex / Global Payments, ACI, Authipay, Payvector, Windcave, Planet, Checkout.com, NMI, Capita Pay360, Credorax)", "Mobile-money integration (aggregator callbacks, hash verification)", "Webhook signature verification", "OAuth2 / JWT / OIDC", "PCI-aware coding", "Hosted payment pages", "Idempotency & duplicate-payment prevention", "3-D Secure"]
       },
       {
         "title": "Cloud & DevOps",
@@ -291,7 +317,7 @@
       },
       {
         "title": "Arquitetura & Liderança",
-        "skills": ["Microservices & modular monoliths", "System design", "Legacy modernization", "Agile / Scrum", "Team leadership", "Mentoring", "AI-assisted development"]
+        "skills": ["Microservices & modular monoliths", "System design", "Legacy modernization", "Physical-access integration (ANPR, barrier control)", "Agile / Scrum", "Team leadership", "Mentoring", "AI-assisted development"]
       }
     ],
     "learning": {

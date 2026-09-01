@@ -52,7 +52,7 @@
     "heading": "Payments-led, broad by design.",
     "body": [
       "I'm a Senior Full-Stack Java Engineer specialized in payments and fintech, with 20+ years of experience — the last decade at Telclic (Dublin; remote from Brazil), building and modernizing production platforms.",
-      "Payments is my deepest specialty: I raised card authorization from ~38% to ~85% and integrated 13 gateways behind unified, PCI-aware APIs. But my work spans much more — mobility and smart-city platforms, end-to-end full-stack delivery in Java/Spring and Angular, the team's CI/CD that I built from scratch, and legacy-to-modern migrations.",
+      "Payments is my deepest specialty: I raised card authorization from ~38% to ~85% and integrated 13 gateways behind unified, PCI-aware APIs. But my work spans much more — mobility, smart-city and port-infrastructure platforms, end-to-end full-stack delivery in Java/Spring and Angular, the team's CI/CD that I built from scratch, and legacy-to-modern migrations.",
       "I work asynchronously across time zones, with near-full daily overlap with US Eastern business hours. Fluent English (C1). I'm looking for remote roles where depth, range, and ownership matter."
     ]
   },
@@ -94,7 +94,7 @@
         {
           "title": "Mobility & smart-city",
           "bullets": [
-            "Delivered full-stack features across mobility platforms — a multi-tenant parking system serving two national markets, a national bike-share, and a port traffic-management system."
+            "Largest contributor (38% of commits, 15-person team) to the Port of Dakar's truck-appointment and gate-access platform — 6 years in production, 3.7M truck movements, 24/7 — owning the gate-pass API, ANPR integration across 13 gate lanes, and the payments/invoicing stack. Also delivered full-stack features for a multi-tenant parking platform and Ireland's national bike-share."
           ]
         },
         {
@@ -228,11 +228,37 @@
         "tech": ["Java 17", "Spring Boot 3.5", "Angular 20", "Spring Data JDBC", "Flyway", "MQTT", "Multi-tenant SaaS"]
       },
       {
-        "name": "TrafficFlow",
-        "role": "Full-stack",
+        "name": "TrafficFlow — Port Access & Truck Appointment Platform · Port of Dakar",
+        "role": "Largest contributor · 2021–2025",
         "url": "https://telclic.net/trafficflow",
-        "description": "Cloud HGV traffic-management platform for the Port of Dakar: ANPR automated entry/exit, scheduling, and integrated payments; relieved congestion that had forced vessels to reroute.",
-        "tech": ["Cloud", "ANPR", "Scheduling", "Payments"]
+        "description": "The system that controlled truck access to the Port of Dakar for six years — every container truck booked, authorised, tracked and billed through it.",
+        "metrics": {
+          "caption": "Six years in production · 24/7",
+          "items": [
+            { "value": "3.7M", "label": "truck movements" },
+            { "value": "4.3M", "label": "automated ANPR barrier authorisations" },
+            { "value": "5.8%", "label": "busiest hour's share of daily volume (2.6:1 peak-to-trough)" }
+          ]
+        },
+        "blocks": [
+          {
+            "label": "Ownership",
+            "text": "Largest contributor on a 15-person team (38% of commits). Built the terminal-operator gate-pass REST API, trip lifecycle, receipt/PDF generation and multilingual SMS/e-mail pipelines (EN/FR/Wolof/Bambara, 2M+ messages)."
+          },
+          {
+            "label": "Physical access",
+            "text": "ANPR integration controlling 13 physical gate lanes across three port zones; buffer parking, slot release and automated barrier authorisation."
+          },
+          {
+            "label": "Payments & accounts",
+            "text": "Prepaid haulier accounts with overdraft control and payment terms, mobile-money integration via aggregator (Orange Money, Free Money, Wari, E-Money — callbacks with hash verification, 60k+ transactions), automated invoices, receipts and statements across 3.4M fee-charged trips."
+          },
+          {
+            "label": "Traffic shaping",
+            "text": "Slot-based appointments with per-terminal hourly quotas spread arrivals across a true 24/7 profile — busiest hour just 5.8% of volume. Scaled through +15.7% growth in truck movements with a 20.7M-event audit trail."
+          }
+        ],
+        "tech": ["Java 11", "Spring 5.3", "Spring Batch", "MySQL 8", "ANPR", "Mobile money"]
       },
       {
         "name": "TFI Bikes",
@@ -267,7 +293,7 @@
     "groups": [
       {
         "title": "Backend",
-        "skills": ["Java (8 / 11 / 17)", "Spring Framework / MVC (5.3–5.8)", "Spring Boot (3.x)", "Spring Security", "Spring Data JPA", "Hibernate", "Flyway", "Lombok", "MapStruct"]
+        "skills": ["Java (8 / 11 / 17)", "Spring Framework / MVC (5.3–5.8)", "Spring Boot (3.x)", "Spring Security", "Spring Data JPA", "Spring Batch", "Hibernate", "Flyway", "Lombok", "MapStruct"]
       },
       {
         "title": "Frontend",
@@ -275,7 +301,7 @@
       },
       {
         "title": "Payments & Security",
-        "skills": ["13 gateways (Stripe, PayPal, Worldpay, Realex / Global Payments, ACI, Authipay, Payvector, Windcave, Planet, Checkout.com, NMI, Capita Pay360, Credorax)", "Webhook signature verification", "OAuth2 / JWT / OIDC", "PCI-aware coding", "Hosted payment pages", "Idempotency & duplicate-payment prevention", "3-D Secure"]
+        "skills": ["13 gateways (Stripe, PayPal, Worldpay, Realex / Global Payments, ACI, Authipay, Payvector, Windcave, Planet, Checkout.com, NMI, Capita Pay360, Credorax)", "Mobile-money integration (aggregator callbacks, hash verification)", "Webhook signature verification", "OAuth2 / JWT / OIDC", "PCI-aware coding", "Hosted payment pages", "Idempotency & duplicate-payment prevention", "3-D Secure"]
       },
       {
         "title": "Cloud & DevOps",
@@ -291,7 +317,7 @@
       },
       {
         "title": "Architecture & Leadership",
-        "skills": ["Microservices & modular monoliths", "System design", "Legacy modernization", "Agile / Scrum", "Team leadership", "Mentoring", "AI-assisted development"]
+        "skills": ["Microservices & modular monoliths", "System design", "Legacy modernization", "Physical-access integration (ANPR, barrier control)", "Agile / Scrum", "Team leadership", "Mentoring", "AI-assisted development"]
       }
     ],
     "learning": {
