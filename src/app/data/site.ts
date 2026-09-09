@@ -67,6 +67,21 @@ export const SKILL_ICONS: IconName[] = ['server', 'code', 'shield', 'cloud', 'da
 export const EXPERIENCE_ICONS: IconName[] = ['credit-card', 'git-branch', 'refresh-cw', 'map-pin', 'users', 'sparkles'];
 
 /**
+ * Certificate links for `education.courses`, matched by position. Kept here rather than in
+ * the i18n files because the URLs are the same in every language — reordering the courses
+ * means reordering these too. An empty entry renders as a plain chip, not a broken link.
+ */
+export const COURSE_CERTIFICATE_URLS: string[] = [
+  '', // Globalcode · Web Developer Academy
+  '', // Globalcode · Java Academy
+  'https://www.udemy.com/certificate/UC-2dcb645d-4ac4-4908-a8e0-f817856859f0/', // Udemy · Spring & Hibernate
+  'https://www.udemy.com/certificate/UC-246d222d-82d3-431c-900f-028eafc855da/', // Udemy · Angular – The Complete Guide
+  'https://www.udemy.com/certificate/UC-1ac148ce-3843-4829-b60c-d917c1a24e10/', // Udemy · Apache Maven: Beginner to Guru
+  'https://www.udemy.com/certificate/UC-73875744-0ede-4de2-903e-d215b70cd121/', // Udemy · Responsive Web Design HTML5 & CSS3
+  'https://www.udemy.com/certificate/UC-da96a740-c83b-4148-a6e4-d1307114e331/', // Udemy · Bootstrap 4
+];
+
+/**
  * Icons for the labelled blocks of the case-study projects (the ones whose i18n
  * entry carries a `blocks` array), keyed by the project's position in
  * `projects.items` and then matching the order of its blocks. Reordering

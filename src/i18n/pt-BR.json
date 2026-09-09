@@ -335,23 +335,21 @@
     ]
   },
   "education": {
-    "label": "Formação, Certificações & Cursos",
+    "label": "Formação & Cursos",
     "heading": "Base e aprendizado contínuo.",
-    "items": [
-      "Bacharelado em Ciência da Computação — Universidade Paulista, São Paulo, Brasil",
-      "Curso de Inglês — Griffith College, Dublin",
-      "Oracle Certified Professional, Java Programmer — Oracle",
-      "Web Developer Academy & Java Academy — Globalcode",
-      {
-      "title": "Udemy",
-      "courses": [
-        "Spring & Hibernate (incl. Spring Boot)",
-        "Angular – The Complete Guide",
-        "Apache Maven: Beginner to Guru",
-        "Web Responsivo com HTML5 & CSS3",
-        "Bootstrap 4"
-      ]
-    }
+    "credentials": [
+      { "title": "Bacharelado em Ciência da Computação", "subline": "Universidade Paulista · São Paulo, Brasil" },
+      { "title": "Curso de Inglês", "subline": "Griffith College · Dublin, Irlanda" }
+    ],
+    "coursesTitle": "Cursos",
+    "courses": [
+      { "source": "Globalcode", "name": "Web Developer Academy" },
+      { "source": "Globalcode", "name": "Java Academy" },
+      { "source": "Udemy", "name": "Spring & Hibernate (incl. Spring Boot)" },
+      { "source": "Udemy", "name": "Angular – The Complete Guide" },
+      { "source": "Udemy", "name": "Apache Maven: Beginner to Guru" },
+      { "source": "Udemy", "name": "Web Responsivo com HTML5 & CSS3" },
+      { "source": "Udemy", "name": "Bootstrap 4" }
     ]
   },
   "contact": {
