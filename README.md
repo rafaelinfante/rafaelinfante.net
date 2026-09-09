@@ -17,7 +17,8 @@ Personal CV / portfolio site for Rafael Infante — Senior Full-Stack Java Engin
 - Responsive, mobile-first, accessible (semantic HTML, ARIA, keyboard nav, reduced-motion)
 - Instant language toggle (EN / PT-BR), persisted across visits, with `<html lang>` + `hreflang`
 - Light / dark mode toggle (persisted, no-flash)
-- Sections: hero · highlights · about · experience · projects · skills · education · contact · footer
+- Sections: hero · highlights · about · experience · projects · skills · certifications · education · contact · footer
+- Certification badges served as static images (no third-party embed / tracker), each linking to its public Credly verification page
 - One-click CV download; live links to projects and former employers
 - SEO-ready: per-language `<title>` / meta, Open Graph + Twitter Card, OG image, JSON-LD `Person`, sitemap, robots, manifest — all present in the prerendered HTML
 
@@ -46,17 +47,18 @@ npm test -- --watch=false   # run unit tests once (Vitest)
   - `src/i18n/en.json` — English (default, source of truth)
   - `src/i18n/pt-BR.json` — Brazilian Portuguese
   - Every UI string is keyed; keep both files in sync (English first, then translated). They're bundled into the app at build time, so a rebuild picks up changes.
-- Links, icons, and ordering (language-neutral) live in `src/app/data/site.ts` (email, GitHub/LinkedIn URLs, CV path, section order, group icons).
+- Links, icons, and ordering (language-neutral) live in `src/app/data/site.ts` (email, GitHub/LinkedIn URLs, CV path, section order, group icons, certification badges).
+- Certification badges: drop the PNG in `public/badges/` and add an entry to `CERTIFICATIONS` in `src/app/data/site.ts` (badge image + Credly public link), then add the matching name / issuer / alt text at the same position under `certifications.items` in both i18n files. A badge with an empty `credlyUrl` renders without a link rather than as a broken one.
 
 ## Project structure
 
 ```
 src/
 ├── app/
-│   ├── components/             # header, hero, highlights, about, experience,
-│   │                           #   projects, skills, education, contact, footer
+│   ├── components/             # header, hero, highlights, about, experience, projects,
+│   │                           #   skills, certifications, education, contact, footer
 │   ├── shared/                 # icon, reveal directive, theme / language / seo services
-│   ├── data/site.ts            # language-neutral config (links, icons, order)
+│   ├── data/site.ts            # language-neutral config (links, icons, order, certifications)
 │   ├── transloco-loader.ts     # bundles src/i18n/*.json
 │   ├── app.config.ts           # browser providers (Transloco, hydration)
 │   ├── app.config.server.ts    # server providers (prerender)
@@ -66,6 +68,7 @@ src/
 └── index.html                  # base meta, OG/Twitter, JSON-LD, hreflang, no-flash theme/lang
 public/                         # static assets copied as-is
 ├── Rafael_Infante_CV.pdf       # CV download asset
+├── badges/                     # certification badge images (Credly downloads)
 ├── og-image.png · favicon.svg · favicon.ico
 └── manifest.webmanifest · robots.txt · sitemap.xml
 ```

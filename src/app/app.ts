@@ -7,6 +7,7 @@ import { Experience } from './components/experience/experience';
 import { Projects } from './components/projects/projects';
 import { Platform } from './components/platform/platform';
 import { Skills } from './components/skills/skills';
+import { Certifications } from './components/certifications/certifications';
 import { Education } from './components/education/education';
 import { Contact } from './components/contact/contact';
 import { Footer } from './components/footer/footer';
@@ -17,7 +18,7 @@ import { SeoService } from './shared/seo.service';
 @Component({
   selector: 'app-root',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Header, Hero, Highlights, About, Experience, Projects, Platform, Skills, Education, Contact, Footer],
+  imports: [Header, Hero, Highlights, About, Experience, Projects, Platform, Skills, Certifications, Education, Contact, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

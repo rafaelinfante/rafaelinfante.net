@@ -305,7 +305,7 @@
       },
       {
         "title": "Cloud & DevOps",
-        "skills": ["Docker", "Jenkins CI/CD", "Maven", "Git / Bitbucket", "Tomcat", "SonarQube", "Wazuh", "Uptime Kuma", "Observabilidade & monitoramento"]
+        "skills": ["AWS (Certified Developer – Associate, 2026)", "Docker", "Jenkins CI/CD", "Maven", "Git / Bitbucket", "Tomcat", "SonarQube", "Wazuh", "Uptime Kuma", "Observabilidade & monitoramento"]
       },
       {
         "title": "Dados",
@@ -324,6 +324,15 @@
       "text": "Portfólio / aprendendo atualmente: Kafka, RabbitMQ, Kubernetes, Spring AI — projetos públicos em",
       "link": "github.com/rafaelinfante"
     }
+  },
+  "certifications": {
+    "label": "Certificações",
+    "heading": "Credenciais que você pode verificar.",
+    "verify": "Verificar no Credly",
+    "items": [
+      { "name": "AWS Certified Developer – Associate", "issuer": "Amazon Web Services · 2026", "alt": "Selo AWS Certified Developer – Associate" },
+      { "name": "Oracle Certified Professional, Java SE Programmer", "issuer": "Oracle", "alt": "Selo Oracle Certified Professional Java" }
+    ]
   },
   "education": {
     "label": "Formação, Certificações & Cursos",
