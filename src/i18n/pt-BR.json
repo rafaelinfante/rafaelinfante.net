@@ -342,7 +342,16 @@
       "Curso de Inglês — Griffith College, Dublin",
       "Oracle Certified Professional, Java Programmer — Oracle",
       "Web Developer Academy & Java Academy — Globalcode",
-      "Udemy: Spring & Hibernate (incl. Spring Boot); Angular – The Complete Guide; Apache Maven: Beginner to Guru; Web Responsivo com HTML5 & CSS3; Bootstrap 4"
+      {
+      "title": "Udemy",
+      "courses": [
+        "Spring & Hibernate (incl. Spring Boot)",
+        "Angular – The Complete Guide",
+        "Apache Maven: Beginner to Guru",
+        "Web Responsivo com HTML5 & CSS3",
+        "Bootstrap 4"
+      ]
+    }
     ]
   },
   "contact": {
