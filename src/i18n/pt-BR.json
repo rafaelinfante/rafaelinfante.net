@@ -293,7 +293,7 @@
     "groups": [
       {
         "title": "Backend",
-        "skills": ["Java (8 / 11 / 17)", "Spring Framework / MVC (5.3–5.8)", "Spring Boot (3.x)", "Spring Security", "Spring Data JPA", "Spring Batch", "Hibernate", "Flyway", "Lombok", "MapStruct"]
+        "skills": ["Java (8 / 11 / 17)", "Spring Framework / MVC (5.3–5.8)", "Spring Boot (3.x)", "Spring Security", "Spring Data JPA", "Spring Batch", "Apache Kafka (Confluent Certified, 2026)", "Hibernate", "Flyway", "Lombok", "MapStruct"]
       },
       {
         "title": "Frontend",
@@ -321,17 +321,17 @@
       }
     ],
     "learning": {
-      "text": "Portfólio / aprendendo atualmente: Kafka, RabbitMQ, Kubernetes, Spring AI — projetos públicos em",
+      "text": "Portfólio / aprendendo atualmente: RabbitMQ, Kubernetes, Spring AI — projetos públicos em",
       "link": "github.com/rafaelinfante"
     }
   },
   "certifications": {
     "label": "Certificações",
     "heading": "Credenciais que você pode verificar.",
-    "verify": "Verificar no Credly",
     "items": [
-      { "name": "AWS Certified Developer – Associate", "issuer": "Amazon Web Services · 2026", "alt": "Selo AWS Certified Developer – Associate" },
-      { "name": "Oracle Certified Professional, Java SE Programmer", "issuer": "Oracle", "alt": "Selo Oracle Certified Professional Java" }
+      { "name": "AWS Certified Developer – Associate", "issuer": "Amazon Web Services · 2026", "alt": "Selo AWS Certified Developer – Associate", "verify": "Verificar no Credly" },
+      { "name": "Confluent Certified Developer for Apache Kafka", "issuer": "Confluent · 2026", "alt": "Selo Confluent Certified Developer for Apache Kafka", "verify": "Verificar na Confluent" },
+      { "name": "Oracle Certified Professional, Java SE Programmer", "issuer": "Oracle", "alt": "Selo Oracle Certified Professional Java", "verify": "Verificar no Credly" }
     ]
   },
   "education": {

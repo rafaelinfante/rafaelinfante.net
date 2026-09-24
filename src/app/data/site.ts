@@ -38,22 +38,23 @@ export const SOCIALS: Social[] = [
 
 /**
  * Certification badges shown in the certifications strip, in display order.
- * Language-neutral by design: the visible name / issuer / alt text live under
- * `certifications.items` in the i18n files and are matched by position.
+ * Language-neutral by design: the visible name / issuer / alt / "Verify on …"
+ * text live under `certifications.items` in the i18n files, matched by position.
  *
- * `credlyUrl` is the badge's public verification link (Credly → the badge →
- * Share → "Public link"). A badge with an empty `credlyUrl` still renders, just
- * not as a link — so a missing URL can never ship as a broken one.
+ * `verifyUrl` is the badge's public verification page (Credly "Public link",
+ * Confluent certificate page, …). A badge with an empty `verifyUrl` still
+ * renders, just not as a link — so a missing URL can never ship as a broken one.
  */
 export interface Certification {
   key: string;
   image: string;
-  credlyUrl: string;
+  verifyUrl: string;
 }
 
 export const CERTIFICATIONS: Certification[] = [
-  { key: 'aws', image: '/badges/aws-certified-developer-associate.png', credlyUrl: 'https://www.credly.com/badges/ecacf883-e1ec-41fc-aab1-10365e9669af/public_url' },
-  { key: 'oracle', image: '/badges/oracle-certified-professional-java.png', credlyUrl: 'https://www.credly.com/badges/75f15b29-29db-40a8-bc76-a3685fa021a6/public_url' },
+  { key: 'aws', image: '/badges/aws-certified-developer-associate.png', verifyUrl: 'https://www.credly.com/badges/ecacf883-e1ec-41fc-aab1-10365e9669af/public_url' },
+  { key: 'confluent', image: '/badges/confluent-certified-developer-apache-kafka.png', verifyUrl: 'https://certificates.confluent.io/90d88a15-f24f-4ce6-82a4-7ee5ff691d59' },
+  { key: 'oracle', image: '/badges/oracle-certified-professional-java.png', verifyUrl: 'https://www.credly.com/badges/75f15b29-29db-40a8-bc76-a3685fa021a6/public_url' },
 ];
 
 /** In-page section anchors, in nav order. Labels come from the `nav.*` keys. */

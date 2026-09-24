@@ -48,7 +48,7 @@ npm test -- --watch=false   # run unit tests once (Vitest)
   - `src/i18n/pt-BR.json` — Brazilian Portuguese
   - Every UI string is keyed; keep both files in sync (English first, then translated). They're bundled into the app at build time, so a rebuild picks up changes.
 - Links, icons, and ordering (language-neutral) live in `src/app/data/site.ts` (email, GitHub/LinkedIn URLs, CV path, section order, group icons, certification badges).
-- Certification badges: drop the PNG in `public/badges/` and add an entry to `CERTIFICATIONS` in `src/app/data/site.ts` (badge image + Credly public link), then add the matching name / issuer / alt text at the same position under `certifications.items` in both i18n files. A badge with an empty `credlyUrl` renders without a link rather than as a broken one.
+- Certification badges: drop the PNG in `public/badges/` and add an entry to `CERTIFICATIONS` in `src/app/data/site.ts` (badge image + public verification link), then add the matching name / issuer / alt / "Verify on …" text at the same position under `certifications.items` in both i18n files. A badge with an empty `verifyUrl` renders without a link rather than as a broken one.
 
 ## Project structure
 
