@@ -18,7 +18,7 @@ Personal CV / portfolio site for Rafael Infante — Senior Full-Stack Java Engin
 - Instant language toggle (EN / PT-BR), persisted across visits, with `<html lang>` + `hreflang`
 - Light / dark mode toggle (persisted, no-flash)
 - Sections: hero · highlights · about · experience · projects · skills · certifications · education · contact · footer
-- Certification badges served as static images (no third-party embed / tracker), each linking to its public Credly verification page
+- Certification badges served as static images (no third-party embed / tracker), each linking to its public verification page (Oracle, Credly, Confluent)
 - One-click CV download; live links to projects and former employers
 - SEO-ready: per-language `<title>` / meta, Open Graph + Twitter Card, OG image, JSON-LD `Person`, sitemap, robots, manifest — all present in the prerendered HTML
 
@@ -68,7 +68,7 @@ src/
 └── index.html                  # base meta, OG/Twitter, JSON-LD, hreflang, no-flash theme/lang
 public/                         # static assets copied as-is
 ├── Rafael_Infante_CV.pdf       # CV download asset
-├── badges/                     # certification badge images (Credly downloads)
+├── badges/                     # certification badge images (issuer downloads)
 ├── og-image.png · favicon.svg · favicon.ico
 └── manifest.webmanifest · robots.txt · sitemap.xml
 ```

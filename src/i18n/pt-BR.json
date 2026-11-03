@@ -86,7 +86,7 @@
         {
           "title": "Modernização",
           "bullets": [
-            "Atualização de plataforma Java 11→17 e Spring 4.3→5.8 feita sozinho em ~1 semana (~20 bibliotecas), seguida da migração de HibernateTemplate → Spring Data JPA.",
+            "Modernizei a plataforma central de pagamentos duas vezes: Java 11→17 + Spring 4.3→5.8, sozinho, em cerca de uma semana (~20 bibliotecas, depois HibernateTemplate → Spring Data JPA); e em 2026, de novo sozinho e em cerca de uma semana, para Java 25 / Spring 7 / Hibernate 7 / Jakarta EE 11 no Tomcat 11, em três etapas, com testes de caracterização primeiro — 691 testes verdes, contratos com os lojistas inalterados.",
             "Contribuidor principal (#2) no replatform da UI AngularJS 1.6.5 para Angular 17.",
             "Construí serviços greenfield na stack mais recente (Spring Boot 3.5, Angular 20)."
           ]
@@ -187,9 +187,13 @@
           {
             "label": "Escala & automação",
             "text": "1M+ de lembretes automatizados (SMS + e-mail) · 180.000+ registros de segurados · reconciliação automatizada com os relatórios de liquidação dos provedores."
+          },
+          {
+            "label": "Modernização (2026)",
+            "text": "Levada, sozinho, em cerca de uma semana, para Java 25, Spring 7, Spring Data JPA 4, Hibernate 7 e Jakarta EE 11 (javax → jakarta) no Tomcat 11, em três etapas: primeiro, testes de caracterização travando o JSON dos lojistas, os callbacks e os payloads dos gateways; depois, a troca de framework; por fim, Jackson 3, Spring RestClient, IDs de requisição por execução e zero APIs deprecadas. 691 testes verdes; contratos com os lojistas inalterados."
           }
         ],
-        "tech": ["Java 17", "Spring 5.8", "Angular 17", "MySQL", "Jenkins"]
+        "tech": ["Java 25", "Spring 7", "Jakarta EE 11", "Angular 17", "MySQL 8", "Tomcat 11", "Jenkins"]
       },
       {
         "name": "Visitor Parking Management — SaaS Multi-Tenant Greenfield",
@@ -293,7 +297,7 @@
     "groups": [
       {
         "title": "Backend",
-        "skills": ["Java (8 / 11 / 17)", "Spring Framework / MVC (5.3–5.8)", "Spring Boot (3.x)", "Spring Security", "Spring Data JPA", "Spring Batch", "Apache Kafka (Confluent Certified, 2026)", "Hibernate", "Flyway", "Lombok", "MapStruct"]
+        "skills": ["Java (8 / 11 / 17 / 25)", "Spring Framework / MVC (5.3–7)", "Spring Boot (3.x)", "Spring Security", "Spring Data JPA 4", "Spring RestClient", "Spring Batch", "Jakarta EE 11", "Hibernate 5–7", "Jackson 3", "Apache Kafka (Confluent Certified, 2026)", "Flyway", "Lombok", "MapStruct"]
       },
       {
         "title": "Frontend",
@@ -305,7 +309,7 @@
       },
       {
         "title": "Cloud & DevOps",
-        "skills": ["AWS (Certified Developer – Associate, 2026)", "Docker", "Jenkins CI/CD", "Maven", "Git / Bitbucket", "Tomcat", "SonarQube", "Wazuh", "Uptime Kuma", "Observabilidade & monitoramento"]
+        "skills": ["AWS (Certified Developer – Associate, 2026)", "Docker", "Jenkins CI/CD", "Maven", "Git / Bitbucket", "Tomcat 9–11", "SonarQube", "Wazuh", "Uptime Kuma", "Observabilidade & monitoramento"]
       },
       {
         "title": "Dados",
@@ -313,7 +317,7 @@
       },
       {
         "title": "Testes",
-        "skills": ["JUnit 5", "Mockito", "Testcontainers", "AssertJ", "JMeter"]
+        "skills": ["JUnit 6", "Mockito 5", "Testcontainers", "AssertJ", "JMeter"]
       },
       {
         "title": "Arquitetura & Liderança",
@@ -329,9 +333,9 @@
     "label": "Certificações",
     "heading": "Credenciais que você pode verificar.",
     "items": [
+      { "name": "Oracle Certified Professional, Java SE 25 Developer", "issuer": "Oracle · 2026", "alt": "Selo Oracle Certified Professional, Java SE 25 Developer", "verify": "Verificar na Oracle" },
       { "name": "AWS Certified Developer – Associate", "issuer": "Amazon Web Services · 2026", "alt": "Selo AWS Certified Developer – Associate", "verify": "Verificar no Credly" },
-      { "name": "Confluent Certified Developer for Apache Kafka", "issuer": "Confluent · 2026", "alt": "Selo Confluent Certified Developer for Apache Kafka", "verify": "Verificar na Confluent" },
-      { "name": "Oracle Certified Professional, Java SE Programmer", "issuer": "Oracle", "alt": "Selo Oracle Certified Professional Java", "verify": "Verificar no Credly" }
+      { "name": "Confluent Certified Developer for Apache Kafka", "issuer": "Confluent · 2026", "alt": "Selo Confluent Certified Developer for Apache Kafka", "verify": "Verificar na Confluent" }
     ]
   },
   "education": {
