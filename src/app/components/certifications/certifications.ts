@@ -21,8 +21,8 @@ const EMPTY_COPY: CertificationCopy = { name: '', issuer: '', alt: '', verify: '
  * the issuers' iframe/JS embeds — those cost a third-party script and track
  * visitors), each linking out to its public verification page.
  *
- * Layout: one card per row on small screens with the badge beside the text;
- * from `md` the three cards sit side by side, which only leaves room for the
+ * Layout: one card per row on phones with the badge beside the text; from `sm`
+ * the cards sit two to a row (four from `lg`), which only leaves room for the
  * 110px badge if it moves above the text — so the card stacks and centres.
  */
 @Component({
@@ -37,7 +37,7 @@ const EMPTY_COPY: CertificationCopy = { name: '', issuer: '', alt: '', verify: '
           <h2 class="heading-2 mt-3">{{ t('certifications.heading') }}</h2>
         </div>
 
-        <ul class="grid gap-4 md:grid-cols-3">
+        <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           @for (cert of items(); track cert.key; let i = $index) {
             <li appReveal [revealDelay]="i * 70">
               <a
@@ -45,7 +45,7 @@ const EMPTY_COPY: CertificationCopy = { name: '', issuer: '', alt: '', verify: '
                 [attr.target]="cert.verifyUrl ? '_blank' : null"
                 [attr.rel]="cert.verifyUrl ? 'noopener noreferrer' : null"
                 [attr.aria-label]="cert.verifyUrl ? t('a11y.visit', { name: cert.name + ' — ' + cert.issuer }) : null"
-                class="flex h-full items-center gap-5 rounded-2xl border border-ink-200 bg-white p-5 shadow-sm transition-colors hover:border-accent-400 dark:border-ink-800 dark:bg-ink-900 dark:shadow-none dark:hover:border-accent-500/60 md:flex-col md:justify-start md:gap-4 md:p-6 md:text-center"
+                class="flex h-full items-center gap-5 rounded-2xl border border-ink-200 bg-white p-5 shadow-sm transition-colors hover:border-accent-400 dark:border-ink-800 dark:bg-ink-900 dark:shadow-none dark:hover:border-accent-500/60 sm:flex-col sm:justify-start sm:gap-4 sm:p-6 sm:text-center"
               >
                 <img
                   [src]="cert.image"

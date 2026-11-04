@@ -335,7 +335,8 @@
     "items": [
       { "name": "Oracle Certified Professional, Java SE 25 Developer", "issuer": "Oracle · 2026", "alt": "Oracle Certified Professional, Java SE 25 Developer badge", "verify": "Verify on Oracle" },
       { "name": "AWS Certified Developer – Associate", "issuer": "Amazon Web Services · 2026", "alt": "AWS Certified Developer – Associate badge", "verify": "Verify on Credly" },
-      { "name": "Confluent Certified Developer for Apache Kafka", "issuer": "Confluent · 2026", "alt": "Confluent Certified Developer for Apache Kafka badge", "verify": "Verify on Confluent" }
+      { "name": "Confluent Certified Developer for Apache Kafka", "issuer": "Confluent · 2026", "alt": "Confluent Certified Developer for Apache Kafka badge", "verify": "Verify on Confluent" },
+      { "name": "Oracle Certified Professional, Java SE 5 Programmer", "issuer": "Oracle · 2011", "alt": "Oracle Certified Professional, Java SE 5 Programmer badge", "verify": "Verify on Credly" }
     ]
   },
   "education": {

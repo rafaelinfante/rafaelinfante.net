@@ -52,9 +52,10 @@ export interface Certification {
 }
 
 export const CERTIFICATIONS: Certification[] = [
-  { key: 'oracle', image: '/badges/oracle-java-se25-developer.png', verifyUrl: 'https://catalog-education.oracle.com/pls/certview/sharebadge?id=32F0BECB01424700868A1D91E717759F47E72ECBA3B708CF8C93CB10168A1B49' },
+  { key: 'oracle-se25', image: '/badges/oracle-java-se25-developer.png', verifyUrl: 'https://catalog-education.oracle.com/pls/certview/sharebadge?id=32F0BECB01424700868A1D91E717759F47E72ECBA3B708CF8C93CB10168A1B49' },
   { key: 'aws', image: '/badges/aws-certified-developer-associate.png', verifyUrl: 'https://www.credly.com/badges/ecacf883-e1ec-41fc-aab1-10365e9669af/public_url' },
   { key: 'confluent', image: '/badges/confluent-certified-developer-apache-kafka.png', verifyUrl: 'https://certificates.confluent.io/90d88a15-f24f-4ce6-82a4-7ee5ff691d59' },
+  { key: 'oracle-se5', image: '/badges/oracle-java-se5-programmer.png', verifyUrl: 'https://www.credly.com/badges/75f15b29-29db-40a8-bc76-a3685fa021a6/public_url' },
 ];
 
 /** In-page section anchors, in nav order. Labels come from the `nav.*` keys. */
